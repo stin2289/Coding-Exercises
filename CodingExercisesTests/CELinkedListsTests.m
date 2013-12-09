@@ -160,6 +160,44 @@
     XCTAssertTrue([self nodeValuesAreEqualWithFirstNode:totalNode2 SecondNode:[self.linkedLists convertNumberToNodeWithNumber:[NSNumber numberWithInt:33333]]],@"numbers added should equal");
 }
 
+//2.5
+- (void)testLinkedLists_testCorruptLinkedList
+{
+    //head 1
+    CELinkedNode *firstNumber = [[CELinkedNode alloc] initWithNodeData:[NSNumber numberWithInt:2]];
+    [firstNumber appendToTail:[NSNumber numberWithInt:2]];
+    [firstNumber appendToTail:[NSNumber numberWithInt:2]];
+    [firstNumber appendToTail:[NSNumber numberWithInt:2]];
+    [firstNumber appendToTail:[NSNumber numberWithInt:2]];
+    [firstNumber appendToTail:[NSNumber numberWithInt:2]];
+    [firstNumber appendToTail:[NSNumber numberWithInt:2]];
+    
+    CELinkedNode *secondNumber = [[CELinkedNode alloc] initWithNodeData:[NSNumber numberWithInt:3]];
+    [secondNumber appendToTail:[NSNumber numberWithInt:3]];
+    [secondNumber appendToTail:[NSNumber numberWithInt:3]];
+    [secondNumber appendToTail:[NSNumber numberWithInt:3]];
+    [secondNumber appendToTail:[NSNumber numberWithInt:3]];
+    
+    //corrupt node
+    [secondNumber appendToTail:[NSNumber numberWithInt:3]];
+    
+    //rest of nodes
+    [secondNumber appendToTail:[NSNumber numberWithInt:3]];
+    [secondNumber appendToTail:[NSNumber numberWithInt:3]];
+    
+    //set this node to point to corrupt node
+    [secondNumber appendToTail:[NSNumber numberWithInt:3]];
+    
+    //set last node next to corrupt node
+    CELinkedNode *corruptNode = [self returnNodeAtIndex:5 Head:secondNumber];
+    CELinkedNode *lastNode = [self returnNodeAtIndex:8 Head:secondNumber];
+    lastNode.next = corruptNode;
+    
+    XCTAssertTrue([self.linkedLists returnDuplicateNodeWithHead:firstNumber] == NULL,@"shouldn't be a duplicate");
+    XCTAssertTrue([self.linkedLists returnDuplicateNodeWithHead:secondNumber] == corruptNode,@"should be a duplicate");
+    
+}
+
 
 -(BOOL)duplicatesInLinkedListWithHead:(CELinkedNode *)head
 {

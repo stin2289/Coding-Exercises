@@ -211,5 +211,40 @@
 }
 
 
+//2.5
+//- Given a circular linked list, implement an algorithm which returns node at the beginning of //the loop
+//DEFINITION
+//Circular linked list: A (corrupt) linked list in which a node’s next pointer points to an //earlier node, so as to make a loop in the linked list
+//EXAMPLE
+//input: A -> B -> C -> D -> E -> C [the same C as earlier]
+//output: C
+-(CELinkedNode *)returnDuplicateNodeWithHead:(CELinkedNode *)head
+{
+    //create dictionary of ids
+    NSMutableDictionary *nodeIds = [[NSMutableDictionary alloc] init];
+    
+    [nodeIds setObject:[NSNumber numberWithBool:YES] forKey:[[NSNumber numberWithInt:head.hash]stringValue]];
+    
+    CELinkedNode *n = head;
+    
+    while(n.next != NULL){
+        
+        n = n.next;
+        
+        //make id a string so that it can be compared and used in a dictionary
+        //check to see if id is in dictionary
+        if([nodeIds objectForKey:[[NSNumber numberWithInt:n.hash] stringValue]]){
+            return n;
+        }
+        
+        [nodeIds setObject:[NSNumber numberWithBool:YES] forKey:[[NSNumber numberWithInt:n.hash]stringValue]];
+        
+    }
+    
+    return NULL;
+    
+}
+
+
 
 @end

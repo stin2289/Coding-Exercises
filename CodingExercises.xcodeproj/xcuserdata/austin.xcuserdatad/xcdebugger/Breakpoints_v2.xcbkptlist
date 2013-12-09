@@ -339,7 +339,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "168"
             endingLineNumber = "168"
-            landmarkName = "-duplicatesInLinkedListWithHead:"
+            landmarkName = "-testLinkedLists_testCorruptLinkedList"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -355,7 +355,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "173"
             endingLineNumber = "173"
-            landmarkName = "-duplicatesInLinkedListWithHead:"
+            landmarkName = "-testLinkedLists_testCorruptLinkedList"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -463,7 +463,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "167"
             endingLineNumber = "167"
-            landmarkName = "-duplicatesInLinkedListWithHead:"
+            landmarkName = "-testLinkedLists_testCorruptLinkedList"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -695,7 +695,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "172"
             endingLineNumber = "172"
-            landmarkName = "-duplicatesInLinkedListWithHead:"
+            landmarkName = "-testLinkedLists_testCorruptLinkedList"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -706,12 +706,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercisesTests/CELinkedListsTests.m"
-            timestampString = "408239055.239399"
+            timestampString = "408248494.666406"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "178"
-            endingLineNumber = "178"
-            landmarkName = "-duplicatesInLinkedListWithHead:"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
+            landmarkName = "-testLinkedLists_testCorruptLinkedList"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -800,12 +800,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercisesTests/CELinkedListsTests.m"
-            timestampString = "408239055.239399"
+            timestampString = "408248517.517936"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "191"
-            endingLineNumber = "191"
-            landmarkName = "-returnNodeAtIndex:Head:"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
+            landmarkName = "-duplicatesInLinkedListWithHead:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -816,12 +816,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercisesTests/CELinkedListsTests.m"
-            timestampString = "408239055.239399"
+            timestampString = "408248517.517936"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
-            landmarkName = "-returnNodeAtIndex:Head:"
+            startingLineNumber = "215"
+            endingLineNumber = "215"
+            landmarkName = "-duplicatesInLinkedListWithHead:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -924,12 +924,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercisesTests/CELinkedListsTests.m"
-            timestampString = "408239055.239399"
+            timestampString = "408248517.517936"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "203"
-            endingLineNumber = "203"
-            landmarkName = "-returnNodeAtIndex:Head:"
+            startingLineNumber = "220"
+            endingLineNumber = "220"
+            landmarkName = "-duplicatesInLinkedListWithHead:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1170,12 +1170,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercisesTests/CELinkedListsTests.m"
-            timestampString = "408239055.239399"
+            timestampString = "408248517.517936"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
-            landmarkName = "-returnNodeAtIndex:Head:"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
+            landmarkName = "-duplicatesInLinkedListWithHead:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1391,6 +1391,114 @@
                   offsetFromSymbolStart = "577">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodingExercisesTests/CELinkedListsTests.m"
+            timestampString = "408248517.517936"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
+            landmarkName = "-testLinkedLists_testCorruptLinkedList"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CELinkedListsTests testLinkedLists_testCorruptLinkedList]"
+                  moduleName = "CodingExercisesTests"
+                  urlString = "file:///Users/austin/Documents/Code/CodingExercises/CodingExercisesTests/CELinkedListsTests.m"
+                  timestampString = "408248222.38934"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "184"
+                  endingLineNumber = "184"
+                  offsetFromSymbolStart = "1336">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CELinkedListsTests testLinkedLists_testCorruptLinkedList]"
+                  moduleName = "CodingExercisesTests"
+                  urlString = "file:///Users/austin/Documents/Code/CodingExercises/CodingExercisesTests/CELinkedListsTests.m"
+                  timestampString = "408248222.389547"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "184"
+                  endingLineNumber = "184"
+                  offsetFromSymbolStart = "1907">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodingExercises/CELinkedLists.m"
+            timestampString = "408247868.852353"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
+            landmarkName = "-returnDuplicateNodeWithHead:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CELinkedLists returnDuplicateNodeWithHead:]"
+                  moduleName = "CodingExercises"
+                  urlString = "file:///Users/austin/Documents/Code/CodingExercises/CodingExercises/CELinkedLists.m"
+                  timestampString = "408248222.024116"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "226"
+                  endingLineNumber = "226"
+                  offsetFromSymbolStart = "117">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CELinkedLists returnDuplicateNodeWithHead:]"
+                  moduleName = "CodingExercisesTests"
+                  urlString = "file:///Users/austin/Documents/Code/CodingExercises/CodingExercises/CELinkedLists.m"
+                  timestampString = "408248222.38975"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "226"
+                  endingLineNumber = "226"
+                  offsetFromSymbolStart = "117">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodingExercisesTests/CELinkedListsTests.m"
+            timestampString = "408247977.685731"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "-testLinkedLists_testAddingNumberNodes"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

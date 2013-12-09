@@ -31,4 +31,8 @@
 -(int)convertNodeToNumberWithHead:(CELinkedNode *)head;
 -(CELinkedNode *)convertNumberToNodeWithNumber:(NSNumber *)number;
 
+//2.5
+//- Given a circular linked list, implement an algorithm which returns node at the beginning of //the loop
+-(CELinkedNode *)returnDuplicateNodeWithHead:(CELinkedNode *)head;
+
 @end
