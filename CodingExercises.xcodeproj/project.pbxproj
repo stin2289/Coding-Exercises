@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D91C284C184EA7390021EB76 /* CELinkedLists.m in Sources */ = {isa = PBXBuildFile; fileRef = D91C284B184EA7390021EB76 /* CELinkedLists.m */; };
+		D91C284D184EA7390021EB76 /* CELinkedLists.m in Sources */ = {isa = PBXBuildFile; fileRef = D91C284B184EA7390021EB76 /* CELinkedLists.m */; };
+		D91C2850184EA8E70021EB76 /* CELinkedNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D91C284F184EA8E70021EB76 /* CELinkedNode.m */; };
+		D91C2851184EA8E70021EB76 /* CELinkedNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D91C284F184EA8E70021EB76 /* CELinkedNode.m */; };
+		D91C2853184EBE2F0021EB76 /* CELinkedListsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D91C2852184EBE2F0021EB76 /* CELinkedListsTests.m */; };
 		D938B197182EDA510051BA7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D938B196182EDA510051BA7F /* Foundation.framework */; };
 		D938B199182EDA510051BA7F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D938B198182EDA510051BA7F /* CoreGraphics.framework */; };
 		D938B19B182EDA510051BA7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D938B19A182EDA510051BA7F /* UIKit.framework */; };
@@ -18,7 +23,8 @@
 		D938B1B1182EDA510051BA7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D938B196182EDA510051BA7F /* Foundation.framework */; };
 		D938B1B2182EDA510051BA7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D938B19A182EDA510051BA7F /* UIKit.framework */; };
 		D938B1BA182EDA510051BA7F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D938B1B8182EDA510051BA7F /* InfoPlist.strings */; };
-		D938B1BC182EDA510051BA7F /* CodingExercisesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D938B1BB182EDA510051BA7F /* CodingExercisesTests.m */; };
+		D938B1BC182EDA510051BA7F /* CEDataStructuresTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D938B1BB182EDA510051BA7F /* CEDataStructuresTests.m */; };
+		D938B1C7183020480051BA7F /* CEDataStructures.m in Sources */ = {isa = PBXBuildFile; fileRef = D938B1C6183020480051BA7F /* CEDataStructures.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D91C284A184EA7390021EB76 /* CELinkedLists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CELinkedLists.h; sourceTree = "<group>"; };
+		D91C284B184EA7390021EB76 /* CELinkedLists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CELinkedLists.m; sourceTree = "<group>"; };
+		D91C284E184EA8E70021EB76 /* CELinkedNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CELinkedNode.h; sourceTree = "<group>"; };
+		D91C284F184EA8E70021EB76 /* CELinkedNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CELinkedNode.m; sourceTree = "<group>"; };
+		D91C2852184EBE2F0021EB76 /* CELinkedListsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CELinkedListsTests.m; sourceTree = "<group>"; };
 		D938B193182EDA510051BA7F /* CodingExercises.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingExercises.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D938B196182EDA510051BA7F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D938B198182EDA510051BA7F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,7 +58,9 @@
 		D938B1AF182EDA510051BA7F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D938B1B7182EDA510051BA7F /* CodingExercisesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CodingExercisesTests-Info.plist"; sourceTree = "<group>"; };
 		D938B1B9182EDA510051BA7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D938B1BB182EDA510051BA7F /* CodingExercisesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodingExercisesTests.m; sourceTree = "<group>"; };
+		D938B1BB182EDA510051BA7F /* CEDataStructuresTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CEDataStructuresTests.m; sourceTree = "<group>"; };
+		D938B1C5183020480051BA7F /* CEDataStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEDataStructures.h; sourceTree = "<group>"; };
+		D938B1C6183020480051BA7F /* CEDataStructures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEDataStructures.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +124,10 @@
 				D938B1A6182EDA510051BA7F /* CEAppDelegate.m */,
 				D938B1A8182EDA510051BA7F /* Images.xcassets */,
 				D938B19D182EDA510051BA7F /* Supporting Files */,
+				D938B1C5183020480051BA7F /* CEDataStructures.h */,
+				D938B1C6183020480051BA7F /* CEDataStructures.m */,
+				D91C284A184EA7390021EB76 /* CELinkedLists.h */,
+				D91C284B184EA7390021EB76 /* CELinkedLists.m */,
 			);
 			path = CodingExercises;
 			sourceTree = "<group>";
@@ -122,6 +139,8 @@
 				D938B19F182EDA510051BA7F /* InfoPlist.strings */,
 				D938B1A2182EDA510051BA7F /* main.m */,
 				D938B1A4182EDA510051BA7F /* CodingExercises-Prefix.pch */,
+				D91C284E184EA8E70021EB76 /* CELinkedNode.h */,
+				D91C284F184EA8E70021EB76 /* CELinkedNode.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -129,7 +148,8 @@
 		D938B1B5182EDA510051BA7F /* CodingExercisesTests */ = {
 			isa = PBXGroup;
 			children = (
-				D938B1BB182EDA510051BA7F /* CodingExercisesTests.m */,
+				D938B1BB182EDA510051BA7F /* CEDataStructuresTests.m */,
+				D91C2852184EBE2F0021EB76 /* CELinkedListsTests.m */,
 				D938B1B6182EDA510051BA7F /* Supporting Files */,
 			);
 			path = CodingExercisesTests;
@@ -240,7 +260,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91C2850184EA8E70021EB76 /* CELinkedNode.m in Sources */,
+				D91C284C184EA7390021EB76 /* CELinkedLists.m in Sources */,
 				D938B1A7182EDA510051BA7F /* CEAppDelegate.m in Sources */,
+				D938B1C7183020480051BA7F /* CEDataStructures.m in Sources */,
 				D938B1A3182EDA510051BA7F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,7 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D938B1BC182EDA510051BA7F /* CodingExercisesTests.m in Sources */,
+				D91C2853184EBE2F0021EB76 /* CELinkedListsTests.m in Sources */,
+				D91C284D184EA7390021EB76 /* CELinkedLists.m in Sources */,
+				D91C2851184EA8E70021EB76 /* CELinkedNode.m in Sources */,
+				D938B1BC182EDA510051BA7F /* CEDataStructuresTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +470,7 @@
 				D938B1C1182EDA510051BA7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D938B1C2182EDA510051BA7F /* Build configuration list for PBXNativeTarget "CodingExercisesTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +479,7 @@
 				D938B1C4182EDA510051BA7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
