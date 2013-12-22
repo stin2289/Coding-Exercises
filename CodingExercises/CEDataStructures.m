@@ -12,7 +12,7 @@
 
 #pragma mark - arrays/strings/hash
 
--(BOOL)hasUniqueCharactersWithString:(NSString *)inputString
++ (BOOL)hasUniqueCharactersWithString:(NSString *)inputString
 {
     
     NSMutableDictionary *characters = [[NSMutableDictionary alloc] init];
@@ -34,7 +34,7 @@
 }
 
 
-- (BOOL)hasUniqueCharactersWithStringNoDataStructure:(NSString *)inputString
++ (BOOL)hasUniqueCharactersWithStringNoDataStructure:(NSString *)inputString
 {
     
     for(int i = 0; i < [inputString length]; i++){
@@ -51,7 +51,7 @@
     
 }
 
-- (BOOL)containsMultiplesOfCharacter:(NSString *)character InputString:(NSString *)inputString
++ (BOOL)containsMultiplesOfCharacter:(NSString *)character InputString:(NSString *)inputString
 {
     int characterCount = 0;
     
@@ -75,7 +75,7 @@
 }
 
 //1.2
-- (NSString *)reverseString:(NSString *)inputString
++ (NSString *)reverseString:(NSString *)inputString
 {
     
     NSString *outputString = @"";
@@ -93,7 +93,7 @@
     
 }
 
-- (void)reverseCStyleString:(char*)str
++ (void)reverseCStyleString:(char*)str
 {
     //str always equals the first character
     //*end is assigned to the first character
@@ -131,7 +131,7 @@
 //1.3
 //Design an algorithm and write code to remove the duplicate characters in a string without using any additional buffer
 //NOTE: One or two additional variables are fine An extra copy of the array is not
-- (NSString *)removeDuplicatesWithInputString:(NSString *)inputString
++ (NSString *)removeDuplicatesWithInputString:(NSString *)inputString
 {
     if([inputString length] < 2)
         return inputString;
@@ -160,7 +160,7 @@
 }
 
 
-- (BOOL)containsCharacterWithInputString:(NSString *)inputString ComparisonCharacter:(NSString *)comparisonCharacter
++ (BOOL)containsCharacterWithInputString:(NSString *)inputString ComparisonCharacter:(NSString *)comparisonCharacter
 {
     
     
@@ -182,7 +182,7 @@
 
 //1.4
 //Write a method to decide if two strings are anagrams or not
-- (BOOL)keysAreAnagramsWithFirstString:(NSString *)firstString SecondString:(NSString *)secondString
++ (BOOL)keysAreAnagramsWithFirstString:(NSString *)firstString SecondString:(NSString *)secondString
 {
     
     NSMutableDictionary *firstDictionary = [self calculateDictionaryStringWithInputString:firstString];
@@ -193,7 +193,7 @@
     
 }
 
-- (BOOL)dictionariesHaveEqualKeysAndValuesWithFirstDictionary:(NSMutableDictionary *)firstDictionary SecondDictionary:(NSMutableDictionary *)secondDictionary
++ (BOOL)dictionariesHaveEqualKeysAndValuesWithFirstDictionary:(NSMutableDictionary *)firstDictionary SecondDictionary:(NSMutableDictionary *)secondDictionary
 {
     if([[firstDictionary allKeys] count] != [[secondDictionary allKeys] count])
         return NO;
@@ -212,7 +212,7 @@
     
 }
 
-- (NSMutableDictionary *)calculateDictionaryStringWithInputString:(NSString *)inputString
++ (NSMutableDictionary *)calculateDictionaryStringWithInputString:(NSString *)inputString
 {
     
     NSMutableDictionary *stringsDictionary = [[NSMutableDictionary alloc] init];
@@ -241,7 +241,7 @@
 
 //1.5
 //Write a method to replace all spaces in a string with ‘%20’
-- (NSString *)replaceCharactersWithInputString:(NSString *)inputString
++ (NSString *)replaceCharactersWithInputString:(NSString *)inputString
                                 OriginalString:(NSString *)originalString ReplacementString:(NSString *)replacementString
 {
     
@@ -265,7 +265,7 @@
 }
 
 //1.6
--(void)rotateWithMatrix:(int **)matrix N:(int)n
++ (void)rotateWithMatrix:(int **)matrix N:(int)n
 {
     
     for (int layer = 0; layer < n / 2; ++layer) {

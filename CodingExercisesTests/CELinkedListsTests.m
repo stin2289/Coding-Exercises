@@ -44,9 +44,7 @@
     [self.head2 appendToTail:[NSNumber numberWithInt:4]];
     [self.head2 appendToTail:[NSNumber numberWithInt:5]];
     [self.head2 appendToTail:[NSNumber numberWithInt:4]];
-    
-    //linkedList object
-    self.linkedLists = [[CELinkedLists alloc] init];
+
 }
 
 - (void)tearDown
@@ -65,8 +63,8 @@
     
     
     //remove duplicates
-    self.head1 = [self.linkedLists removeDuplicatesFromLinkedListWithHead:self.head1];
-    self.head2 = [self.linkedLists removeDuplicatesFromLinkedListWithHead:self.head2];
+    self.head1 = [CELinkedLists removeDuplicatesFromLinkedListWithHead:self.head1];
+    self.head2 = [CELinkedLists removeDuplicatesFromLinkedListWithHead:self.head2];
     
     //test duplicate remover
     XCTAssertFalse([self duplicatesInLinkedListWithHead:self.head1],@"linked list shouldn't have duplicates");
@@ -84,8 +82,8 @@
     
 
     //remove duplicates
-    self.head1 = [self.linkedLists removeDuplicatesFromLinkedListNoDataBufferWithHead:self.head1];
-    self.head2 = [self.linkedLists removeDuplicatesFromLinkedListNoDataBufferWithHead:self.head2];
+    self.head1 = [CELinkedLists removeDuplicatesFromLinkedListNoDataBufferWithHead:self.head1];
+    self.head2 = [CELinkedLists removeDuplicatesFromLinkedListNoDataBufferWithHead:self.head2];
     
     //test duplicate remover
     XCTAssertFalse([self duplicatesInLinkedListWithHead:self.head1],@"linked list shouldn't have duplicates");
@@ -96,12 +94,12 @@
 //2.2
 - (void)testLinkedLists_testReturnNthToLastElement
 {
-    XCTAssertTrue(self.head1 == [self.linkedLists returnNthToLastElementWithIndex:6 Head:self.head1],@"should return the correct node");
-    XCTAssertTrue([self returnNodeAtIndex:6 Head:self.head1] == [self.linkedLists returnNthToLastElementWithIndex:0 Head:self.head1],@"should return the correct node");
-    XCTAssertTrue([self returnNodeAtIndex:5 Head:self.head1] == [self.linkedLists returnNthToLastElementWithIndex:1 Head:self.head1],@"should return the correct node");
-    XCTAssertTrue([self returnNodeAtIndex:4 Head:self.head1] == [self.linkedLists returnNthToLastElementWithIndex:2 Head:self.head1],@"should return the correct node");
-    XCTAssertTrue([self returnNodeAtIndex:3 Head:self.head1] == [self.linkedLists returnNthToLastElementWithIndex:3 Head:self.head1],@"should return the correct node");
-    XCTAssertTrue([self returnNodeAtIndex:2 Head:self.head1] == [self.linkedLists returnNthToLastElementWithIndex:4 Head:self.head1],@"should return the correct node");
+    XCTAssertTrue(self.head1 == [CELinkedLists returnNthToLastElementWithIndex:6 Head:self.head1],@"should return the correct node");
+    XCTAssertTrue([self returnNodeAtIndex:6 Head:self.head1] == [CELinkedLists returnNthToLastElementWithIndex:0 Head:self.head1],@"should return the correct node");
+    XCTAssertTrue([self returnNodeAtIndex:5 Head:self.head1] == [CELinkedLists returnNthToLastElementWithIndex:1 Head:self.head1],@"should return the correct node");
+    XCTAssertTrue([self returnNodeAtIndex:4 Head:self.head1] == [CELinkedLists returnNthToLastElementWithIndex:2 Head:self.head1],@"should return the correct node");
+    XCTAssertTrue([self returnNodeAtIndex:3 Head:self.head1] == [CELinkedLists returnNthToLastElementWithIndex:3 Head:self.head1],@"should return the correct node");
+    XCTAssertTrue([self returnNodeAtIndex:2 Head:self.head1] == [CELinkedLists returnNthToLastElementWithIndex:4 Head:self.head1],@"should return the correct node");
 }
 
 //2.3
@@ -109,7 +107,7 @@
 {
     CELinkedNode *n1 = [self returnNodeAtIndex:3 Head:self.head1];
     NSNumber *n1Data = n1.data;
-    [self.linkedLists removeNodeWithHead:n1];
+    [CELinkedLists removeNodeWithHead:n1];
     
     CELinkedNode *n2 = [self returnNodeAtIndex:3 Head:self.head1];
     
@@ -134,30 +132,30 @@
     [thirdNumber appendToTail:[NSNumber numberWithInt:4]];
     
     //test convert node to number
-    XCTAssertTrue([self.linkedLists convertNodeToNumberWithHead:firstNumber] == 222,@"should equal number passed in");
-    XCTAssertTrue([self.linkedLists convertNodeToNumberWithHead:secondNumber] == 333,@"should equal number passed in");
+    XCTAssertTrue([CELinkedLists convertNodeToNumberWithHead:firstNumber] == 222,@"should equal number passed in");
+    XCTAssertTrue([CELinkedLists convertNodeToNumberWithHead:secondNumber] == 333,@"should equal number passed in");
     
     //test equal node values
     XCTAssertTrue([self nodeValuesAreEqualWithFirstNode:firstNumber SecondNode:firstNumber],@"all nodes should equal");
     XCTAssertFalse([self nodeValuesAreEqualWithFirstNode:firstNumber SecondNode:thirdNumber],@"all nodes should not equal");
     
     //test convert node to number
-    XCTAssertTrue([self nodeValuesAreEqualWithFirstNode:[self.linkedLists convertNumberToNodeWithNumber:[NSNumber numberWithInt:333]]
-                                             SecondNode:[self.linkedLists convertNumberToNodeWithNumber:[NSNumber numberWithInt:333]]],@"should equal number passed in");
-    XCTAssertFalse([self nodeValuesAreEqualWithFirstNode:[self.linkedLists convertNumberToNodeWithNumber:[NSNumber numberWithInt:333]]
-                                             SecondNode:[self.linkedLists convertNumberToNodeWithNumber:[NSNumber numberWithInt:433]]],@"should equal number passed in");
+    XCTAssertTrue([self nodeValuesAreEqualWithFirstNode:[CELinkedLists convertNumberToNodeWithNumber:[NSNumber numberWithInt:333]]
+                                             SecondNode:[CELinkedLists convertNumberToNodeWithNumber:[NSNumber numberWithInt:333]]],@"should equal number passed in");
+    XCTAssertFalse([self nodeValuesAreEqualWithFirstNode:[CELinkedLists convertNumberToNodeWithNumber:[NSNumber numberWithInt:333]]
+                                             SecondNode:[CELinkedLists convertNumberToNodeWithNumber:[NSNumber numberWithInt:433]]],@"should equal number passed in");
     
     //create total node
-    CELinkedNode *totalNode = [self.linkedLists addTwoNumbersWithFirstNode:[self.linkedLists convertNumberToNodeWithNumber:[NSNumber numberWithInt:333]]
-                                                    SecondNode:[self.linkedLists convertNumberToNodeWithNumber:[NSNumber numberWithInt:444]]];
+    CELinkedNode *totalNode = [CELinkedLists addTwoNumbersWithFirstNode:[CELinkedLists convertNumberToNodeWithNumber:[NSNumber numberWithInt:333]]
+                                                    SecondNode:[CELinkedLists convertNumberToNodeWithNumber:[NSNumber numberWithInt:444]]];
     
-    XCTAssertTrue([self nodeValuesAreEqualWithFirstNode:totalNode SecondNode:[self.linkedLists convertNumberToNodeWithNumber:[NSNumber numberWithInt:777]]],@"numbers added should equal");
+    XCTAssertTrue([self nodeValuesAreEqualWithFirstNode:totalNode SecondNode:[CELinkedLists convertNumberToNodeWithNumber:[NSNumber numberWithInt:777]]],@"numbers added should equal");
     
     //create total node2
-    CELinkedNode *totalNode2 = [self.linkedLists addTwoNumbersWithFirstNode:[self.linkedLists convertNumberToNodeWithNumber:[NSNumber numberWithInt:11111]]
-                                                                SecondNode:[self.linkedLists convertNumberToNodeWithNumber:[NSNumber numberWithInt:22222]]];
+    CELinkedNode *totalNode2 = [CELinkedLists addTwoNumbersWithFirstNode:[CELinkedLists convertNumberToNodeWithNumber:[NSNumber numberWithInt:11111]]
+                                                                SecondNode:[CELinkedLists convertNumberToNodeWithNumber:[NSNumber numberWithInt:22222]]];
     
-    XCTAssertTrue([self nodeValuesAreEqualWithFirstNode:totalNode2 SecondNode:[self.linkedLists convertNumberToNodeWithNumber:[NSNumber numberWithInt:33333]]],@"numbers added should equal");
+    XCTAssertTrue([self nodeValuesAreEqualWithFirstNode:totalNode2 SecondNode:[CELinkedLists convertNumberToNodeWithNumber:[NSNumber numberWithInt:33333]]],@"numbers added should equal");
 }
 
 //2.5
@@ -193,8 +191,8 @@
     CELinkedNode *lastNode = [self returnNodeAtIndex:8 Head:secondNumber];
     lastNode.next = corruptNode;
     
-    XCTAssertTrue([self.linkedLists returnDuplicateNodeWithHead:firstNumber] == NULL,@"shouldn't be a duplicate");
-    XCTAssertTrue([self.linkedLists returnDuplicateNodeWithHead:secondNumber] == corruptNode,@"should be a duplicate");
+    XCTAssertTrue([CELinkedLists returnDuplicateNodeWithHead:firstNumber] == NULL,@"shouldn't be a duplicate");
+    XCTAssertTrue([CELinkedLists returnDuplicateNodeWithHead:secondNumber] == corruptNode,@"should be a duplicate");
     
 }
 

@@ -10,8 +10,8 @@
 
 @interface CELinkedNode : NSObject
 
-@property (nonatomic,retain) CELinkedNode *next;
-@property (nonatomic,retain) NSNumber *data;
+@property (nonatomic) CELinkedNode *next;
+@property (nonatomic) NSNumber *data;
 
 -(CELinkedNode *)init;
 -(CELinkedNode *)initWithNodeData:(NSNumber *)data;

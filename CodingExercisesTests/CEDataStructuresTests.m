@@ -21,8 +21,6 @@
 {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
-    
-    self.dataStructures = [[CEDataStructures alloc] init];
 }
 
 - (void)tearDown
@@ -36,12 +34,12 @@
 {
 
     //1.1(part 1)
-    XCTAssertFalse([self.dataStructures hasUniqueCharactersWithString:@"boon"],@"String has unique characters");
-    XCTAssertTrue([self.dataStructures hasUniqueCharactersWithString:@"dope"],@"String doesn't have unique characters");
+    XCTAssertFalse([CEDataStructures hasUniqueCharactersWithString:@"boon"],@"String has unique characters");
+    XCTAssertTrue([CEDataStructures hasUniqueCharactersWithString:@"dope"],@"String doesn't have unique characters");
  
     //1.1(part 2)
-    XCTAssertFalse([self.dataStructures hasUniqueCharactersWithStringNoDataStructure:@"boon"],@"String has unique characters");
-    XCTAssertTrue([self.dataStructures hasUniqueCharactersWithStringNoDataStructure:@"dope"],@"String doesn't have unique characters");
+    XCTAssertFalse([CEDataStructures hasUniqueCharactersWithStringNoDataStructure:@"boon"],@"String has unique characters");
+    XCTAssertTrue([CEDataStructures hasUniqueCharactersWithStringNoDataStructure:@"dope"],@"String doesn't have unique characters");
     
 }
 
@@ -49,14 +47,14 @@
 - (void)testDataStructures_reverseCStyleString
 {
     
-    XCTAssert([[self.dataStructures reverseString:@"hello"] isEqualToString:@"ollehN"],@"String should be reversed");
-    XCTAssert([[self.dataStructures reverseString:@"olleh"] isEqualToString:@"helloN"],@"String should be reversed");
+    XCTAssert([[CEDataStructures reverseString:@"hello"] isEqualToString:@"ollehN"],@"String should be reversed");
+    XCTAssert([[CEDataStructures reverseString:@"olleh"] isEqualToString:@"helloN"],@"String should be reversed");
     
     //cStyle strings
     //char* cInputString = "hello";
     //char* cStringOutput = "olleh";
     
-    //[self.dataStructures reverseCStyleString:cInputString];
+    //[CEDataStructures reverseCStyleString:cInputString];
     //XCTAssert(cStringOutput == cStringOutput,@"String should be reversed");
     
 }
@@ -65,9 +63,9 @@
 - (void)testDataStructures_removeDuplicateCharacters
 {
     
-    XCTAssert([[self.dataStructures removeDuplicatesWithInputString:@"helloo"] isEqualToString:@"helo"],@"String should not have duplicate chars");
-    XCTAssert([[self.dataStructures removeDuplicatesWithInputString:@"aaabbbccc"] isEqualToString:@"abc"],@"String should not have duplicate chars");
-    XCTAssert([[self.dataStructures removeDuplicatesWithInputString:@"h"] isEqualToString:@"h"],@"String should not have duplicate chars");
+    XCTAssert([[CEDataStructures removeDuplicatesWithInputString:@"helloo"] isEqualToString:@"helo"],@"String should not have duplicate chars");
+    XCTAssert([[CEDataStructures removeDuplicatesWithInputString:@"aaabbbccc"] isEqualToString:@"abc"],@"String should not have duplicate chars");
+    XCTAssert([[CEDataStructures removeDuplicatesWithInputString:@"h"] isEqualToString:@"h"],@"String should not have duplicate chars");
     
 }
 
@@ -75,12 +73,12 @@
 - (void)testDataStructures_testAreStringsAnagrams
 {
     
-    XCTAssert([self.dataStructures keysAreAnagramsWithFirstString:@"helloo" SecondString:@"ololeh"] == YES,@"Strings are anagrams");
-    XCTAssert([self.dataStructures keysAreAnagramsWithFirstString:@"helloo" SecondString:@"helloo"] == YES,@"Strings are anagrams");
-    XCTAssert([self.dataStructures keysAreAnagramsWithFirstString:@"helloo" SecondString:@"oolleh"] == YES,@"Strings are anagrams");
-    XCTAssert([self.dataStructures keysAreAnagramsWithFirstString:@"helloo" SecondString:@"ololeho"] == NO,@"Strings are not anagrams");
-    XCTAssert([self.dataStructures keysAreAnagramsWithFirstString:@"helloo" SecondString:@"h"] == NO,@"Strings are not anagrams");
-    XCTAssert([self.dataStructures keysAreAnagramsWithFirstString:@"helloo" SecondString:@"hleo"] == NO,@"Strings are not anagrams");
+    XCTAssert([CEDataStructures keysAreAnagramsWithFirstString:@"helloo" SecondString:@"ololeh"] == YES,@"Strings are anagrams");
+    XCTAssert([CEDataStructures keysAreAnagramsWithFirstString:@"helloo" SecondString:@"helloo"] == YES,@"Strings are anagrams");
+    XCTAssert([CEDataStructures keysAreAnagramsWithFirstString:@"helloo" SecondString:@"oolleh"] == YES,@"Strings are anagrams");
+    XCTAssert([CEDataStructures keysAreAnagramsWithFirstString:@"helloo" SecondString:@"ololeho"] == NO,@"Strings are not anagrams");
+    XCTAssert([CEDataStructures keysAreAnagramsWithFirstString:@"helloo" SecondString:@"h"] == NO,@"Strings are not anagrams");
+    XCTAssert([CEDataStructures keysAreAnagramsWithFirstString:@"helloo" SecondString:@"hleo"] == NO,@"Strings are not anagrams");
     
 }
 
@@ -88,13 +86,13 @@
 - (void)testDataStructures_testReplaceCharacterInString
 {
     
-    XCTAssert([[self.dataStructures replaceCharactersWithInputString:@"h llo" OriginalString:@" " ReplacementString:@"%20"]
+    XCTAssert([[CEDataStructures replaceCharactersWithInputString:@"h llo" OriginalString:@" " ReplacementString:@"%20"]
                isEqualToString:@"h%20llo"],@"String replaces correct characters");
     
-    XCTAssert([[self.dataStructures replaceCharactersWithInputString:@"h l l o" OriginalString:@" " ReplacementString:@"%20"]
+    XCTAssert([[CEDataStructures replaceCharactersWithInputString:@"h l l o" OriginalString:@" " ReplacementString:@"%20"]
                isEqualToString:@"h%20l%20l%20o"],@"String replaces correct characters");
     
-    XCTAssert([[self.dataStructures replaceCharactersWithInputString:@"h       llo" OriginalString:@" " ReplacementString:@"%20"]
+    XCTAssert([[CEDataStructures replaceCharactersWithInputString:@"h       llo" OriginalString:@" " ReplacementString:@"%20"]
                isEqualToString:@"h%20%20%20%20%20%20%20llo"],@"String replaces correct characters");
 
     

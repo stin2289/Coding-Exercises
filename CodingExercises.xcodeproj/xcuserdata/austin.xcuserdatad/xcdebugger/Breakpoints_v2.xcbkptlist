@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercisesTests/CEDataStructuresTests.m"
-            timestampString = "405813311.81285"
+            timestampString = "409180171.937274"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "-testDataStructures_duplicateCharactersInStrings"
             landmarkType = "5">
             <Locations>
@@ -75,7 +75,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
             endingLineNumber = "18"
-            landmarkName = "-hasUniqueCharactersWithString:"
+            landmarkName = "+hasUniqueCharactersWithString:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -91,7 +91,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
             endingLineNumber = "41"
-            landmarkName = "-hasUniqueCharactersWithStringNoDataStructure:"
+            landmarkName = "+hasUniqueCharactersWithStringNoDataStructure:"
             landmarkType = "5">
             <Locations>
                <Location
@@ -137,7 +137,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "58"
             endingLineNumber = "58"
-            landmarkName = "-containsMultiplesOfCharacter:InputString:"
+            landmarkName = "+containsMultiplesOfCharacter:InputString:"
             landmarkType = "5">
             <Locations>
                <Location
@@ -199,7 +199,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "81"
             endingLineNumber = "81"
-            landmarkName = "-reverseString:"
+            landmarkName = "+reverseString:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -215,7 +215,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "90"
             endingLineNumber = "90"
-            landmarkName = "-reverseString:"
+            landmarkName = "+reverseString:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -231,7 +231,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "143"
             endingLineNumber = "143"
-            landmarkName = "-removeDuplicatesWithInputString:"
+            landmarkName = "+removeDuplicatesWithInputString:"
             landmarkType = "5">
             <Locations>
                <Location
@@ -277,7 +277,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "145"
             endingLineNumber = "145"
-            landmarkName = "-removeDuplicatesWithInputString:"
+            landmarkName = "+removeDuplicatesWithInputString:"
             landmarkType = "5">
             <Locations>
                <Location
@@ -318,11 +318,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercisesTests/CEDataStructuresTests.m"
-            timestampString = "406423622.573755"
+            timestampString = "409180171.937274"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "-testDataStructures_testAreStringsAnagrams"
             landmarkType = "5">
          </BreakpointContent>
@@ -334,11 +334,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercisesTests/CELinkedListsTests.m"
-            timestampString = "408239055.239399"
+            timestampString = "409180310.269083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
             landmarkName = "-testLinkedLists_testCorruptLinkedList"
             landmarkType = "5">
          </BreakpointContent>
@@ -350,11 +350,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercisesTests/CELinkedListsTests.m"
-            timestampString = "408239055.239399"
+            timestampString = "409180310.269083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "173"
-            endingLineNumber = "173"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
             landmarkName = "-testLinkedLists_testCorruptLinkedList"
             landmarkType = "5">
          </BreakpointContent>
@@ -398,11 +398,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercisesTests/CELinkedListsTests.m"
-            timestampString = "407820411.070916"
+            timestampString = "409180310.269083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "-testLinkedLists_testDuplicateDataValues"
             landmarkType = "5">
             <Locations>
@@ -458,11 +458,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercisesTests/CELinkedListsTests.m"
-            timestampString = "408239055.239399"
+            timestampString = "409180310.269083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
             landmarkName = "-testLinkedLists_testCorruptLinkedList"
             landmarkType = "5">
          </BreakpointContent>
@@ -479,7 +479,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
             endingLineNumber = "17"
-            landmarkName = "-removeDuplicatesFromLinkedListWithHead:"
+            landmarkName = "+removeDuplicatesFromLinkedListWithHead:"
             landmarkType = "5">
             <Locations>
                <Location
@@ -520,11 +520,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercisesTests/CELinkedListsTests.m"
-            timestampString = "407820411.070916"
+            timestampString = "409180310.269083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "-testLinkedLists_testDuplicateDataValues"
             landmarkType = "5">
          </BreakpointContent>
@@ -536,11 +536,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercisesTests/CELinkedListsTests.m"
-            timestampString = "407820411.070916"
+            timestampString = "409180310.269083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "-testLinkedLists_testDuplicateDataValues"
             landmarkType = "5">
          </BreakpointContent>
@@ -557,7 +557,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
             endingLineNumber = "25"
-            landmarkName = "-removeDuplicatesFromLinkedListWithHead:"
+            landmarkName = "+removeDuplicatesFromLinkedListWithHead:"
             landmarkType = "5">
             <Locations>
                <Location
@@ -603,7 +603,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
             endingLineNumber = "31"
-            landmarkName = "-removeDuplicatesFromLinkedListWithHead:"
+            landmarkName = "+removeDuplicatesFromLinkedListWithHead:"
             landmarkType = "5">
             <Locations>
                <Location
@@ -649,7 +649,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
             endingLineNumber = "28"
-            landmarkName = "-removeDuplicatesFromLinkedListWithHead:"
+            landmarkName = "+removeDuplicatesFromLinkedListWithHead:"
             landmarkType = "5">
             <Locations>
                <Location
@@ -690,11 +690,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercisesTests/CELinkedListsTests.m"
-            timestampString = "408239055.239399"
+            timestampString = "409180310.269083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "172"
-            endingLineNumber = "172"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
             landmarkName = "-testLinkedLists_testCorruptLinkedList"
             landmarkType = "5">
          </BreakpointContent>
@@ -706,11 +706,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercisesTests/CELinkedListsTests.m"
-            timestampString = "408248494.666406"
+            timestampString = "409180310.269083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "195"
-            endingLineNumber = "195"
+            startingLineNumber = "193"
+            endingLineNumber = "193"
             landmarkName = "-testLinkedLists_testCorruptLinkedList"
             landmarkType = "5">
          </BreakpointContent>
@@ -727,7 +727,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "80"
             endingLineNumber = "80"
-            landmarkName = "-returnNthToLastElementWithIndex:Head:"
+            landmarkName = "+returnNthToLastElementWithIndex:Head:"
             landmarkType = "5">
             <Locations>
                <Location
@@ -768,7 +768,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercisesTests/CELinkedListsTests.m"
-            timestampString = "408232563.319344"
+            timestampString = "409180310.269083"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "-testLinkedLists_testRemoveNode"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodingExercisesTests/CELinkedListsTests.m"
+            timestampString = "409180310.269083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "108"
@@ -784,27 +800,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercisesTests/CELinkedListsTests.m"
-            timestampString = "408232563.319344"
+            timestampString = "409180310.269083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
-            landmarkName = "-testLinkedLists_testRemoveNode"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CodingExercisesTests/CELinkedListsTests.m"
-            timestampString = "408248517.517936"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "208"
-            endingLineNumber = "208"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
             landmarkName = "-duplicatesInLinkedListWithHead:"
             landmarkType = "5">
          </BreakpointContent>
@@ -816,11 +816,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercisesTests/CELinkedListsTests.m"
-            timestampString = "408248517.517936"
+            timestampString = "409180310.269083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "215"
-            endingLineNumber = "215"
+            startingLineNumber = "213"
+            endingLineNumber = "213"
             landmarkName = "-duplicatesInLinkedListWithHead:"
             landmarkType = "5">
          </BreakpointContent>
@@ -832,11 +832,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercisesTests/CELinkedListsTests.m"
-            timestampString = "408232563.319344"
+            timestampString = "409180310.269083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "-testLinkedLists_testRemoveNode"
             landmarkType = "5">
             <Locations>
@@ -883,7 +883,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "111"
             endingLineNumber = "111"
-            landmarkName = "-removeNodeWithHead:"
+            landmarkName = "+removeNodeWithHead:"
             landmarkType = "5">
             <Locations>
                <Location
@@ -924,11 +924,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercisesTests/CELinkedListsTests.m"
-            timestampString = "408248517.517936"
+            timestampString = "409180310.269083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "220"
-            endingLineNumber = "220"
+            startingLineNumber = "218"
+            endingLineNumber = "218"
             landmarkName = "-duplicatesInLinkedListWithHead:"
             landmarkType = "5">
          </BreakpointContent>
@@ -945,7 +945,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "99"
             endingLineNumber = "99"
-            landmarkName = "-returnNthToLastElementWithIndex:Head:"
+            landmarkName = "+returnNthToLastElementWithIndex:Head:"
             landmarkType = "5">
             <Locations>
                <Location
@@ -991,7 +991,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "93"
             endingLineNumber = "93"
-            landmarkName = "-returnNthToLastElementWithIndex:Head:"
+            landmarkName = "+returnNthToLastElementWithIndex:Head:"
             landmarkType = "5">
             <Locations>
                <Location
@@ -1037,7 +1037,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "100"
             endingLineNumber = "100"
-            landmarkName = "-returnNthToLastElementWithIndex:Head:"
+            landmarkName = "+returnNthToLastElementWithIndex:Head:"
             landmarkType = "5">
             <Locations>
                <Location
@@ -1083,7 +1083,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "95"
             endingLineNumber = "95"
-            landmarkName = "-returnNthToLastElementWithIndex:Head:"
+            landmarkName = "+returnNthToLastElementWithIndex:Head:"
             landmarkType = "5">
             <Locations>
                <Location
@@ -1129,7 +1129,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "117"
             endingLineNumber = "117"
-            landmarkName = "-removeNodeWithHead:"
+            landmarkName = "+removeNodeWithHead:"
             landmarkType = "5">
             <Locations>
                <Location
@@ -1170,11 +1170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercisesTests/CELinkedListsTests.m"
-            timestampString = "408248517.517936"
+            timestampString = "409180310.269083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "221"
-            endingLineNumber = "221"
+            startingLineNumber = "219"
+            endingLineNumber = "219"
             landmarkName = "-duplicatesInLinkedListWithHead:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1191,7 +1191,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "98"
             endingLineNumber = "98"
-            landmarkName = "-returnNthToLastElementWithIndex:Head:"
+            landmarkName = "+returnNthToLastElementWithIndex:Head:"
             landmarkType = "5">
             <Locations>
                <Location
@@ -1237,7 +1237,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "79"
             endingLineNumber = "79"
-            landmarkName = "-returnNthToLastElementWithIndex:Head:"
+            landmarkName = "+returnNthToLastElementWithIndex:Head:"
             landmarkType = "5">
             <Locations>
                <Location
@@ -1278,11 +1278,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercisesTests/CELinkedListsTests.m"
-            timestampString = "408239024.663876"
+            timestampString = "409180310.269083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "-testLinkedLists_testAddingNumberNodes"
             landmarkType = "5">
             <Locations>
@@ -1343,7 +1343,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "195"
             endingLineNumber = "195"
-            landmarkName = "-convertNumberToNodeWithNumber:"
+            landmarkName = "+convertNumberToNodeWithNumber:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1359,7 +1359,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "206"
             endingLineNumber = "206"
-            landmarkName = "-convertNumberToNodeWithNumber:"
+            landmarkName = "+convertNumberToNodeWithNumber:"
             landmarkType = "5">
             <Locations>
                <Location
@@ -1400,11 +1400,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercisesTests/CELinkedListsTests.m"
-            timestampString = "408248517.517936"
+            timestampString = "409180310.269083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
             landmarkName = "-testLinkedLists_testCorruptLinkedList"
             landmarkType = "5">
             <Locations>
@@ -1446,12 +1446,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercises/CELinkedLists.m"
-            timestampString = "408247868.852353"
+            timestampString = "409180651.847291"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "226"
-            endingLineNumber = "226"
-            landmarkName = "-returnDuplicateNodeWithHead:"
+            startingLineNumber = "227"
+            endingLineNumber = "227"
+            landmarkName = "+returnDuplicateNodeWithHead:"
             landmarkType = "5">
             <Locations>
                <Location
@@ -1492,12 +1492,456 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercisesTests/CELinkedListsTests.m"
-            timestampString = "408247977.685731"
+            timestampString = "409180310.269083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "-testLinkedLists_testAddingNumberNodes"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodingExercises/CESetOfStacks.h"
+            timestampString = "409189124.177058"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "@interface CESetOfStacks"
+            landmarkType = "2">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodingExercisesTests/CEStacksAndQueuesTests.m"
+            timestampString = "409190850.171431"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "-testStacksAndQueues_testSetOfStacksIsWorking"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CEStacksAndQueuesTests testStacksAndQueues_testSetOfStacksIsWorking]"
+                  moduleName = "CodingExercisesTests"
+                  urlString = "file:///Users/austin/Documents/Code/CodingExercises/CodingExercisesTests/CEStacksAndQueuesTests.m"
+                  timestampString = "409191812.916259"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "6693">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CEStacksAndQueuesTests testStacksAndQueues_testSetOfStacksIsWorking]"
+                  moduleName = "CodingExercisesTests"
+                  urlString = "file:///Users/austin/Documents/Code/CodingExercises/CodingExercisesTests/CEStacksAndQueuesTests.m"
+                  timestampString = "409191812.916574"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "8134">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CEStacksAndQueuesTests testStacksAndQueues_testSetOfStacksIsWorking]"
+                  moduleName = "CodingExercisesTests"
+                  urlString = "file:///Users/austin/Documents/Code/CodingExercises/CodingExercisesTests/CEStacksAndQueuesTests.m"
+                  timestampString = "409191812.916816"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "9323">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodingExercisesTests/CEStacksAndQueuesTests.m"
+            timestampString = "409190965.218168"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "-testStacksAndQueues_testSetOfStacksIsWorking"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CEStacksAndQueuesTests testStacksAndQueues_testSetOfStacksIsWorking]"
+                  moduleName = "CodingExercisesTests"
+                  urlString = "file:///Users/austin/Documents/Code/CodingExercises/CodingExercisesTests/CEStacksAndQueuesTests.m"
+                  timestampString = "409191808.420711"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "133"
+                  endingLineNumber = "133"
+                  offsetFromSymbolStart = "1980">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CEStacksAndQueuesTests testStacksAndQueues_testSetOfStacksIsWorking]"
+                  moduleName = "CodingExercisesTests"
+                  urlString = "file:///Users/austin/Documents/Code/CodingExercises/CodingExercisesTests/CEStacksAndQueuesTests.m"
+                  timestampString = "409191808.420931"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "133"
+                  endingLineNumber = "133"
+                  offsetFromSymbolStart = "3364">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CEStacksAndQueuesTests testStacksAndQueues_testSetOfStacksIsWorking]"
+                  moduleName = "CodingExercisesTests"
+                  urlString = "file:///Users/austin/Documents/Code/CodingExercises/CodingExercisesTests/CEStacksAndQueuesTests.m"
+                  timestampString = "409191808.421095"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "133"
+                  endingLineNumber = "133"
+                  offsetFromSymbolStart = "4490">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodingExercisesTests/CEStacksAndQueuesTests.m"
+            timestampString = "409191496.744615"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "-testStacksAndQueues_testSetOfStacksIsWorking"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodingExercisesTests/CEStacksAndQueuesTests.m"
+            timestampString = "409191607.982572"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "-testStacksAndQueues_testSetOfStacksIsWorking"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodingExercisesTests/CEStacksAndQueuesTests.m"
+            timestampString = "409191608.639317"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "-testStacksAndQueues_testSetOfStacksIsWorking"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodingExercisesTests/CEStacksAndQueuesTests.m"
+            timestampString = "409191811.053769"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "-testStacksAndQueues_testSetOfStacksIsWorking"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CEStacksAndQueuesTests testStacksAndQueues_testSetOfStacksIsWorking]"
+                  moduleName = "CodingExercisesTests"
+                  urlString = "file:///Users/austin/Documents/Code/CodingExercises/CodingExercisesTests/CEStacksAndQueuesTests.m"
+                  timestampString = "409191811.055715"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
+                  offsetFromSymbolStart = "3541">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CEStacksAndQueuesTests testStacksAndQueues_testSetOfStacksIsWorking]"
+                  moduleName = "CodingExercisesTests"
+                  urlString = "file:///Users/austin/Documents/Code/CodingExercises/CodingExercisesTests/CEStacksAndQueuesTests.m"
+                  timestampString = "409191811.055919"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
+                  offsetFromSymbolStart = "4925">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CEStacksAndQueuesTests testStacksAndQueues_testSetOfStacksIsWorking]"
+                  moduleName = "CodingExercisesTests"
+                  urlString = "file:///Users/austin/Documents/Code/CodingExercises/CodingExercisesTests/CEStacksAndQueuesTests.m"
+                  timestampString = "409191811.056085"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
+                  offsetFromSymbolStart = "6075">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodingExercisesTests/CEStacksAndQueuesTests.m"
+            timestampString = "409191811.853013"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "-testStacksAndQueues_testSetOfStacksIsWorking"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CEStacksAndQueuesTests testStacksAndQueues_testSetOfStacksIsWorking]"
+                  moduleName = "CodingExercisesTests"
+                  urlString = "file:///Users/austin/Documents/Code/CodingExercises/CodingExercisesTests/CEStacksAndQueuesTests.m"
+                  timestampString = "409191811.855828"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "135"
+                  endingLineNumber = "135"
+                  offsetFromSymbolStart = "5102">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CEStacksAndQueuesTests testStacksAndQueues_testSetOfStacksIsWorking]"
+                  moduleName = "CodingExercisesTests"
+                  urlString = "file:///Users/austin/Documents/Code/CodingExercises/CodingExercisesTests/CEStacksAndQueuesTests.m"
+                  timestampString = "409191811.856103"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "135"
+                  endingLineNumber = "135"
+                  offsetFromSymbolStart = "6510">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CEStacksAndQueuesTests testStacksAndQueues_testSetOfStacksIsWorking]"
+                  moduleName = "CodingExercisesTests"
+                  urlString = "file:///Users/austin/Documents/Code/CodingExercises/CodingExercisesTests/CEStacksAndQueuesTests.m"
+                  timestampString = "409191811.856344"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "135"
+                  endingLineNumber = "135"
+                  offsetFromSymbolStart = "7690">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodingExercisesTests/CEStacksAndQueuesTests.m"
+            timestampString = "409194307.936626"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "-testStacksAndQueues_testSetOfStacksIsWorking"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CEStacksAndQueuesTests testStacksAndQueues_testSetOfStacksIsWorking]"
+                  moduleName = "CodingExercisesTests"
+                  urlString = "file:///Users/austin/Documents/Code/CodingExercises/CodingExercisesTests/CEStacksAndQueuesTests.m"
+                  timestampString = "409194200.229492"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "140"
+                  endingLineNumber = "140"
+                  offsetFromSymbolStart = "9959">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CEStacksAndQueuesTests testStacksAndQueues_testSetOfStacksIsWorking]"
+                  moduleName = "CodingExercisesTests"
+                  urlString = "file:///Users/austin/Documents/Code/CodingExercises/CodingExercisesTests/CEStacksAndQueuesTests.m"
+                  timestampString = "409194200.229735"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "140"
+                  endingLineNumber = "140"
+                  offsetFromSymbolStart = "11400">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CEStacksAndQueuesTests testStacksAndQueues_testSetOfStacksIsWorking]"
+                  moduleName = "CodingExercisesTests"
+                  urlString = "file:///Users/austin/Documents/Code/CodingExercises/CodingExercisesTests/CEStacksAndQueuesTests.m"
+                  timestampString = "409194200.229982"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "140"
+                  endingLineNumber = "140"
+                  offsetFromSymbolStart = "11973">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodingExercises/CESetOfStacks.m"
+            timestampString = "409194199.568068"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "-pop"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodingExercises/CESetOfStacks.m"
+            timestampString = "409194305.22706"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "-pop"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodingExercises/CESetOfStacks.m"
+            timestampString = "409194341.374747"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "-pop"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodingExercises/CESetOfStacks.m"
+            timestampString = "409194378.056837"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "-pop"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodingExercises/CESetOfStacks.m"
+            timestampString = "409194606.968918"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "-pop"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

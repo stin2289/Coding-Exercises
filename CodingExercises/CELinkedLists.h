@@ -13,26 +13,26 @@
 
 
 //2.1a Write code to remove duplicates from an unsorted linked list.
--(CELinkedNode *)removeDuplicatesFromLinkedListWithHead:(CELinkedNode *)head;
++ (CELinkedNode *)removeDuplicatesFromLinkedListWithHead:(CELinkedNode *)head;
 
 //-2.1b How would you solve this problem if a temporary buffer is not allowed?
--(CELinkedNode *)removeDuplicatesFromLinkedListNoDataBufferWithHead:(CELinkedNode *)head;
++ (CELinkedNode *)removeDuplicatesFromLinkedListNoDataBufferWithHead:(CELinkedNode *)head;
 
 //2.2 Implement an algorithm to find the nth to last element of a singly linked list
--(CELinkedNode *)returnNthToLastElementWithIndex:(int)index Head:(CELinkedNode *)head;
++ (CELinkedNode *)returnNthToLastElementWithIndex:(int)index Head:(CELinkedNode *)head;
 
 //2.3
--(void)removeNodeWithHead:(CELinkedNode *)head;
++ (void)removeNodeWithHead:(CELinkedNode *)head;
 
 //2.4
-- (CELinkedNode *)addTwoNumbersWithFirstNode:(CELinkedNode *)firstNode
++ (CELinkedNode *)addTwoNumbersWithFirstNode:(CELinkedNode *)firstNode
                                   SecondNode:(CELinkedNode *)secondNode;
 
--(int)convertNodeToNumberWithHead:(CELinkedNode *)head;
--(CELinkedNode *)convertNumberToNodeWithNumber:(NSNumber *)number;
++ (int)convertNodeToNumberWithHead:(CELinkedNode *)head;
++ (CELinkedNode *)convertNumberToNodeWithNumber:(NSNumber *)number;
 
 //2.5
 //- Given a circular linked list, implement an algorithm which returns node at the beginning of //the loop
--(CELinkedNode *)returnDuplicateNodeWithHead:(CELinkedNode *)head;
++ (CELinkedNode *)returnDuplicateNodeWithHead:(CELinkedNode *)head;
 
 @end

@@ -12,7 +12,7 @@
 @implementation CELinkedLists
 
 //2.1a Write code to remove duplicates from an unsorted linked list.
--(CELinkedNode *)removeDuplicatesFromLinkedListWithHead:(CELinkedNode *)head
++ (CELinkedNode *)removeDuplicatesFromLinkedListWithHead:(CELinkedNode *)head
 {
     NSMutableDictionary *data = [[NSMutableDictionary alloc] init];
     
@@ -44,7 +44,7 @@
 
 
 //-2.1b How would you solve this problem if a temporary buffer is not allowed?
--(CELinkedNode *)removeDuplicatesFromLinkedListNoDataBufferWithHead:(CELinkedNode *)head
++ (CELinkedNode *)removeDuplicatesFromLinkedListNoDataBufferWithHead:(CELinkedNode *)head
 {
     CELinkedNode *n = head;
     
@@ -74,7 +74,7 @@
 
 //2.2 Implement an algorithm to find the nth to last element of a singly linked list
 //nth to last element, index should be treated as number of hops
--(CELinkedNode *)returnNthToLastElementWithIndex:(int)index Head:(CELinkedNode *)head
++ (CELinkedNode *)returnNthToLastElementWithIndex:(int)index Head:(CELinkedNode *)head
 {
     NSMutableArray *linkedListArray = [[NSMutableArray alloc] init];
     
@@ -106,7 +106,7 @@
 //EXAMPLE
 //Input: the node ‘c’ from the linked list a->b->c->d->e
 //Result: nothing is returned, but the new linked list looks like a->b->d->e
--(void)removeNodeWithHead:(CELinkedNode *)head
++ (void)removeNodeWithHead:(CELinkedNode *)head
 {
     //if next is NULL return
     if(head.next == NULL){
@@ -135,7 +135,7 @@
 ////513 + 295 = 808
 //Input: (3 -> 1 -> 5) + (5 -> 9 -> 2)
 //Output: 8 -> 0 -> 8
-- (CELinkedNode *)addTwoNumbersWithFirstNode:(CELinkedNode *)firstNode
++ (CELinkedNode *)addTwoNumbersWithFirstNode:(CELinkedNode *)firstNode
                                   SecondNode:(CELinkedNode *)secondNode
 {
     //add numbers
@@ -147,7 +147,7 @@
     return [self convertNumberToNodeWithNumber:[NSNumber numberWithInt:total]];
 }
 
--(int)convertNodeToNumberWithHead:(CELinkedNode *)head
++ (int)convertNodeToNumberWithHead:(CELinkedNode *)head
 {
     
     CELinkedNode *n = head;
@@ -166,7 +166,7 @@
     
 }
 
--(CELinkedNode *)convertNumberToNodeWithNumber:(NSNumber *)number
++ (CELinkedNode *)convertNumberToNodeWithNumber:(NSNumber *)number
 {
     int total = [number intValue];
     
@@ -218,12 +218,13 @@
 //EXAMPLE
 //input: A -> B -> C -> D -> E -> C [the same C as earlier]
 //output: C
--(CELinkedNode *)returnDuplicateNodeWithHead:(CELinkedNode *)head
++ (CELinkedNode *)returnDuplicateNodeWithHead:(CELinkedNode *)head
 {
     //create dictionary of ids
-    NSMutableDictionary *nodeIds = [[NSMutableDictionary alloc] init];
+   // NSMutableDictionary *nodeIds = [[NSMutableDictionary alloc] init];
+    NSMutableSet *nodeIds = [[NSMutableSet alloc] init];
     
-    [nodeIds setObject:[NSNumber numberWithBool:YES] forKey:[[NSNumber numberWithInt:head.hash]stringValue]];
+    [nodeIds addObject:@(head.hash)];
     
     CELinkedNode *n = head;
     
@@ -233,11 +234,11 @@
         
         //make id a string so that it can be compared and used in a dictionary
         //check to see if id is in dictionary
-        if([nodeIds objectForKey:[[NSNumber numberWithInt:n.hash] stringValue]]){
+        if([nodeIds containsObject:@(n.hash)]){
             return n;
         }
         
-        [nodeIds setObject:[NSNumber numberWithBool:YES] forKey:[[NSNumber numberWithInt:n.hash]stringValue]];
+        [nodeIds addObject:@(n.hash)];
         
     }
     
