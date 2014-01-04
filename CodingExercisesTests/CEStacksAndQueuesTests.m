@@ -12,6 +12,9 @@
 #import "CEStacksAndQueues.h"
 #import "CEStackWithMinimum.h"
 #import "CESetOfStacks.h"
+#import "CETowersOfHanoi.h"
+#import "CEMyQueue.h"
+#import "CEStack+Sorting.h"
 
 @interface CEStacksAndQueuesTests : XCTestCase
 
@@ -137,6 +140,91 @@
     XCTAssertEqual([setOfStacks pop], @1, @"popped value isn't correct");
     XCTAssertEqual([setOfStacks pop], @0, @"popped value isn't correct");
     XCTAssertFalse([setOfStacks pop], @"popped value isn't correct");
+    
+}
+
+
+////3.4
+//- In the classic problem of the Towers of Hanoi, you have 3 rods and N disks of different sizeswhichcanslideontoanytower Thepuzzlestartswithdiskssortedinascending order of size from top to bottom (e g , each disk sits on top of an even larger one) You have the following constraints:
+//(A) Only one disk can be moved at a time
+//(B) A disk is slid off the top of one rod onto the next rod
+//(C) A disk can only be placed on top of a larger disk
+//Write a program to move the disks from the first rod to the last using Stacks
+- (void)testStacksAndQueues_testTowersOfHanoi
+{
+    CETowersOfHanoi *towersOfHanoi = [[CETowersOfHanoi alloc] initWithNumberOfDisks:7];
+    
+    //run towers of hanoi
+    CEStack *finalStack = [towersOfHanoi run];
+    
+    NSLog(@"finalSTack %@",finalStack);
+//    XCTAssertEqual(((NSNumber *)finalStack.top.data),@1, @"stack doesn't have correct value");
+//    XCTAssertEqual(((NSNumber *)finalStack.top.next.data),@2, @"stack doesn't have correct value");
+//    XCTAssertEqual(((NSNumber *)finalStack.top.next.next.data),@3, @"stack doesn't have correct value");
+    
+}
+
+
+//3.5
+//Implement a MyQueue class which implements a queue using two stacks
+- (void)testStacksAndQueues_testQueueOfStacks
+{
+    CEMyQueue *queue = [[CEMyQueue alloc] init];
+    
+    [queue enqueueWithObject:@0];
+    [queue enqueueWithObject:@1];
+    [queue enqueueWithObject:@2];
+    [queue enqueueWithObject:@3];
+    [queue enqueueWithObject:@4];
+    [queue enqueueWithObject:@5];
+    [queue enqueueWithObject:@6];
+    
+    
+    XCTAssertEqual([queue dequeue], @0, @"queue didn't return correct variable");
+    XCTAssertEqual([queue dequeue], @1, @"queue didn't return correct variable");
+    XCTAssertEqual([queue dequeue], @2, @"queue didn't return correct variable");
+    XCTAssertEqual([queue dequeue], @3, @"queue didn't return correct variable");
+    XCTAssertEqual([queue dequeue], @4, @"queue didn't return correct variable");
+    XCTAssertEqual([queue dequeue], @5, @"queue didn't return correct variable");
+    XCTAssertEqual([queue dequeue], @6, @"queue didn't return correct variable");
+    XCTAssertNil([queue dequeue], @"queue didn't return correct variable");
+    
+}
+
+
+//3.6
+//Write a program to sort a stack in ascending order.
+//You should not make any assumptions about how the stack is implemented
+//The following are the only functions that should be used to write this program:
+//push | pop | peek | isEmpty
+- (void)testStacksAndQueues_testSortingStack
+{
+    CEStack *stack = [[CEStack alloc] init];
+    
+    [stack pushWithData:@0];
+    [stack pushWithData:@1];
+    [stack pushWithData:@7];
+    [stack pushWithData:@3];
+    [stack pushWithData:@4];
+    [stack pushWithData:@5];
+    [stack pushWithData:@8];
+    [stack pushWithData:@32];
+    [stack pushWithData:@3];
+    [stack pushWithData:@9];
+    
+    stack = [stack sortedStack];
+    
+    XCTAssertEqual([stack pop], @0, @"stack did not return correct value");
+    XCTAssertEqual([stack pop], @1, @"stack did not return correct value");
+    XCTAssertEqual([stack pop], @3, @"stack did not return correct value");
+    XCTAssertEqual([stack pop], @3, @"stack did not return correct value");
+    XCTAssertEqual([stack pop], @4, @"stack did not return correct value");
+    XCTAssertEqual([stack pop], @5, @"stack did not return correct value");
+    XCTAssertEqual([stack pop], @7, @"stack did not return correct value");
+    XCTAssertEqual([stack pop], @8, @"stack did not return correct value");
+    XCTAssertEqual([stack pop], @9, @"stack did not return correct value");
+    XCTAssertTrue([(NSNumber *)[stack pop] isEqualToNumber:@32], @"stack did not return correct value");
+    
     
 }
 

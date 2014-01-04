@@ -45,7 +45,7 @@
     if(self.front){
         
         //assign front data
-        NSNumber *frontData = self.front.data;
+        id frontData = self.front.data;
         
         //set front to the next node
         self.front = self.front.next;

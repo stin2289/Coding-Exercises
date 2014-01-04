@@ -14,7 +14,7 @@
 @property (nonatomic) CENode *front;
 @property (nonatomic) CENode *back;
 
--(void)enqueueWithData:(NSNumber *)data;
--(NSNumber *)dequeue;
+-(void)enqueueWithData:(id <NSCopying>)data;
+-(id <NSCopying>)dequeue;
 
 @end

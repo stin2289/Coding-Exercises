@@ -11,9 +11,9 @@
 @interface CENode : NSObject
 
 @property (nonatomic) CENode *next;
-@property (nonatomic) NSNumber *data;
+@property (nonatomic) id <NSCopying> data;
 
 -(CENode *)init;
--(CENode *)initWithNodeData:(NSNumber *)data;
+-(CENode *)initWithNodeData:(id <NSCopying>) data;
 
 @end

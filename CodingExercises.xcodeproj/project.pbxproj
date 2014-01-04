@@ -33,6 +33,12 @@
 		D938B1BA182EDA510051BA7F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D938B1B8182EDA510051BA7F /* InfoPlist.strings */; };
 		D938B1BC182EDA510051BA7F /* CEDataStructuresTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D938B1BB182EDA510051BA7F /* CEDataStructuresTests.m */; };
 		D938B1C7183020480051BA7F /* CEDataStructures.m in Sources */ = {isa = PBXBuildFile; fileRef = D938B1C6183020480051BA7F /* CEDataStructures.m */; };
+		D95C0C3E186748090002C29B /* CETowersOfHanoi.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C0C3D186748090002C29B /* CETowersOfHanoi.m */; };
+		D95C0C411867E8550002C29B /* CETower.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C0C401867E8550002C29B /* CETower.m */; };
+		D9BF2AA01877753F0058DA0E /* CEMyQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BF2A9F1877753F0058DA0E /* CEMyQueue.m */; };
+		D9BF2AA11877753F0058DA0E /* CEMyQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BF2A9F1877753F0058DA0E /* CEMyQueue.m */; };
+		D9BF2AA5187781610058DA0E /* CEStack+Sorting.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BF2AA4187781610058DA0E /* CEStack+Sorting.m */; };
+		D9BF2AA6187781610058DA0E /* CEStack+Sorting.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BF2AA4187781610058DA0E /* CEStack+Sorting.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +90,14 @@
 		D938B1BB182EDA510051BA7F /* CEDataStructuresTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CEDataStructuresTests.m; sourceTree = "<group>"; };
 		D938B1C5183020480051BA7F /* CEDataStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEDataStructures.h; sourceTree = "<group>"; };
 		D938B1C6183020480051BA7F /* CEDataStructures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEDataStructures.m; sourceTree = "<group>"; };
+		D95C0C3C186748090002C29B /* CETowersOfHanoi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CETowersOfHanoi.h; sourceTree = "<group>"; };
+		D95C0C3D186748090002C29B /* CETowersOfHanoi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CETowersOfHanoi.m; sourceTree = "<group>"; };
+		D95C0C3F1867E8550002C29B /* CETower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CETower.h; sourceTree = "<group>"; };
+		D95C0C401867E8550002C29B /* CETower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CETower.m; sourceTree = "<group>"; };
+		D9BF2A9E1877753F0058DA0E /* CEMyQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEMyQueue.h; sourceTree = "<group>"; };
+		D9BF2A9F1877753F0058DA0E /* CEMyQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEMyQueue.m; sourceTree = "<group>"; };
+		D9BF2AA3187781610058DA0E /* CEStack+Sorting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CEStack+Sorting.h"; sourceTree = "<group>"; };
+		D9BF2AA4187781610058DA0E /* CEStack+Sorting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CEStack+Sorting.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +163,8 @@
 				D9021D641863968100CB3C35 /* CEStacksAndQueues.m */,
 				D91C284A184EA7390021EB76 /* CELinkedLists.h */,
 				D91C284B184EA7390021EB76 /* CELinkedLists.m */,
+				D95C0C3C186748090002C29B /* CETowersOfHanoi.h */,
+				D95C0C3D186748090002C29B /* CETowersOfHanoi.m */,
 				D938B1A5182EDA510051BA7F /* CEAppDelegate.h */,
 				D938B1A6182EDA510051BA7F /* CEAppDelegate.m */,
 				D95C0C3B18663D690002C29B /* Models */,
@@ -192,6 +208,7 @@
 		D95C0C3B18663D690002C29B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D9BF2AA2187780E00058DA0E /* Categories */,
 				D91C284E184EA8E70021EB76 /* CELinkedNode.h */,
 				D91C284F184EA8E70021EB76 /* CELinkedNode.m */,
 				D9021D541863692400CB3C35 /* CEStack.h */,
@@ -206,8 +223,21 @@
 				D9021D6918639D2000CB3C35 /* CEStackWithMinimum.m */,
 				D9021D6B1863BA3500CB3C35 /* CESetOfStacks.h */,
 				D9021D6C1863BA3500CB3C35 /* CESetOfStacks.m */,
+				D95C0C3F1867E8550002C29B /* CETower.h */,
+				D95C0C401867E8550002C29B /* CETower.m */,
+				D9BF2A9E1877753F0058DA0E /* CEMyQueue.h */,
+				D9BF2A9F1877753F0058DA0E /* CEMyQueue.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		D9BF2AA2187780E00058DA0E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D9BF2AA3187781610058DA0E /* CEStack+Sorting.h */,
+				D9BF2AA4187781610058DA0E /* CEStack+Sorting.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,14 +336,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9BF2AA5187781610058DA0E /* CEStack+Sorting.m in Sources */,
 				D9021D6D1863BA3500CB3C35 /* CESetOfStacks.m in Sources */,
 				D91C2850184EA8E70021EB76 /* CELinkedNode.m in Sources */,
+				D9BF2AA01877753F0058DA0E /* CEMyQueue.m in Sources */,
 				D9021D5F186374EF00CB3C35 /* CEQueue.m in Sources */,
 				D9021D6A18639D2000CB3C35 /* CEStackWithMinimum.m in Sources */,
 				D91C284C184EA7390021EB76 /* CELinkedLists.m in Sources */,
 				D9021D561863692400CB3C35 /* CEStack.m in Sources */,
 				D938B1A7182EDA510051BA7F /* CEAppDelegate.m in Sources */,
 				D9021D5C1863705C00CB3C35 /* CENode.m in Sources */,
+				D95C0C3E186748090002C29B /* CETowersOfHanoi.m in Sources */,
+				D95C0C411867E8550002C29B /* CETower.m in Sources */,
 				D9021D6218637D3400CB3C35 /* CENodeWithMinimum.m in Sources */,
 				D938B1C7183020480051BA7F /* CEDataStructures.m in Sources */,
 				D9021D651863968100CB3C35 /* CEStacksAndQueues.m in Sources */,
@@ -330,6 +364,8 @@
 				D91C2851184EA8E70021EB76 /* CELinkedNode.m in Sources */,
 				D9021D6718639A4300CB3C35 /* CEStacksAndQueuesTests.m in Sources */,
 				D938B1BC182EDA510051BA7F /* CEDataStructuresTests.m in Sources */,
+				D9BF2AA11877753F0058DA0E /* CEMyQueue.m in Sources */,
+				D9BF2AA6187781610058DA0E /* CEStack+Sorting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
