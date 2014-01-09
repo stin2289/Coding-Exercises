@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CETreeNode : NSObject
+@interface CETreeNode : NSObject <NSCopying>
 
 @property (nonatomic) int data;
 

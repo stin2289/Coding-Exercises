@@ -107,15 +107,37 @@
     node2.left = node5;
     node2.right = node6;
     
+    /*
+     uncomment lines to test
+     */
+    
+    /*
     NSLog(@"\n\n depthFirst preOrder");
     [CETreesAndGraphs depthFirstPreorderTraversalWithNode:root];
+     */
     
+    /*
     NSLog(@"\n\n depthFirst inOrder");
     [CETreesAndGraphs depthFirstInorderTraversalWithNode:root];
+     */
     
+    /*
     NSLog(@"\n\n depthFirst depthFirstOrder");
     [CETreesAndGraphs depthFirstPostorderTraversalWithNode:root];
+     */
+    
+    /*
+    NSLog(@"\n\n depthFirst preOrder with stack");
+    [CETreesAndGraphs depthFirstTraversalUsingStackWithNode:root];
+     */
+    
+    /*
+    NSLog(@"\n\n breadthFirst with queue");
+    [CETreesAndGraphs breadthFirstTraversalUsingQueueWithNode:root];
+     */
     
 }
+
+
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "CETreesAndGraphs.h"
+#import "CEStack.h"
+#import "CEQueue.h"
 
 @implementation CETreesAndGraphs
 
@@ -112,6 +114,79 @@
         [self depthFirstPreorderTraversalWithNode:node.right];
         
         NSLog(@"%i",node.data);
+        
+    }
+    
+}
+
+/*
+ depth first traversal with stack
+ pre-order
+ */
++ (void)depthFirstTraversalUsingStackWithNode:(CETreeNode *)node
+{
+    //init variables
+    CETreeNode *currentNode = node;
+    CEStack *stack = [[CEStack alloc] init];
+    
+    //push first value
+    [stack pushWithData:currentNode];
+    
+    //while the stack has a value
+    while([stack peek]){
+        
+        //pop top value
+        currentNode = (CETreeNode *)[stack pop];
+        
+        NSLog(@"value %i",currentNode.data);
+        
+        /*
+         push right value first, so the it traverses the tree from left to right(FILO)
+         */
+        
+        //if node exists, push on stack
+        if(currentNode.right)
+            [stack pushWithData:currentNode.right];
+        
+        //if node exists, push on stack
+        if(currentNode.left)
+            [stack pushWithData:currentNode.left];
+        
+    }
+    
+}
+
+/*
+ breadth first traversal with queue
+ */
++ (void)breadthFirstTraversalUsingQueueWithNode:(CETreeNode *)node
+{
+    //init variables
+    CETreeNode *currentNode = node;
+    CEQueue *queue = [[CEQueue alloc] init];
+    
+    //push first value
+    [queue enqueueWithData:currentNode];
+    
+    //while queue has a value
+    while(queue.front){
+        
+        //pop top value
+        currentNode = (CETreeNode *)[queue dequeue];
+        
+        NSLog(@"value %i",currentNode.data);
+        
+        /*
+         enqueue left value first, so the it traverses the tree from left to right(FIFO)
+         */
+        
+        //if node exists, push on queue
+        if(currentNode.left)
+            [queue enqueueWithData:currentNode.left];
+        
+        //if node exists, push on queue
+        if(currentNode.right)
+            [queue enqueueWithData:currentNode.right];
         
     }
     

@@ -34,5 +34,16 @@
 + (void)depthFirstInorderTraversalWithNode:(CETreeNode *)node;
 + (void)depthFirstPostorderTraversalWithNode:(CETreeNode *)node;
 
+/*
+ depth first traversal with stack
+ pre-order
+ */
++ (void)depthFirstTraversalUsingStackWithNode:(CETreeNode *)node;
+
+/*
+ breadth first traversal with queue
+ */
++ (void)breadthFirstTraversalUsingQueueWithNode:(CETreeNode *)node;
+
 
 @end

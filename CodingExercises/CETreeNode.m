@@ -24,4 +24,17 @@
     
 }
 
+- (id)copyWithZone:(NSZone *)zone
+{
+    CETreeNode *newNode = [[CETreeNode alloc] init];
+    
+    //copy current values
+    newNode.data = self.data;
+    newNode.left = self.left;
+    newNode.right = self.right;
+    
+    return self;
+    
+}
+
 @end
