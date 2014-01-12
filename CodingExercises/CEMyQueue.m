@@ -18,7 +18,7 @@
 
 @implementation CEMyQueue
 
-- (CEMyQueue *)init
+- (instancetype)init
 {
     self = [super init];
     
@@ -36,7 +36,7 @@
 /*
  push object onto stack 1
  */
-- (void)enqueueWithObject:(id<NSCopying>)object
+- (void)enqueueWithObject:(id)object
 {
     [self.stack1 pushWithData:object];
 }
@@ -47,7 +47,7 @@
  pop all contents from stack2 to stack1
  return tempObject
  */
-- (id <NSCopying>)dequeue
+- (id)dequeue
 {
     
     self.stack2 = [self reverseValuesOfStack:self.stack1];
@@ -55,7 +55,7 @@
     //if stack 2 has any values
     if([self.stack2 peek]){
         
-        id <NSCopying>tempObject = [self.stack2 pop];
+        id tempObject = [self.stack2 pop];
         
         //return all the contents of stack2 into stack1
         self.stack1 = [self reverseValuesOfStack:self.stack2];

@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "CETreeNode.h"
 #import "CETreesAndGraphs.h"
+#import "CELinkedNode.h"
 
 @interface CETreesAndGraphsTests : XCTestCase
 
@@ -36,22 +37,25 @@
 {
     //create nodes
     CETreeNode *root = [[CETreeNode alloc] init];
-    root.data = 0;
+    root.data = @0;
     
     CETreeNode *node1 = [[CETreeNode alloc] init];
-    node1.data = 1;
+    node1.data = @1;
     
     CETreeNode *node2 = [[CETreeNode alloc] init];
-    node2.data = 2;
+    node2.data = @2;
     
     CETreeNode *node3 = [[CETreeNode alloc] init];
-    node3.data = 3;
+    node3.data = @3;
     
     CETreeNode *node4 = [[CETreeNode alloc] init];
-    node4.data = 4;
+    node4.data = @4;
     
     CETreeNode *node5 = [[CETreeNode alloc] init];
-    node5.data = 5;
+    node5.data = @5;
+    
+    CETreeNode *node6 = [[CETreeNode alloc] init];
+    node6.data = @6;
     
     //set root
     root.left = node1;
@@ -73,31 +77,33 @@
 }
 
 /*
+ tree traversal
  depth first
+ breadth first
  */
 - (void)testTreesAndGraphs_depthFirstTesting
 {
     //create nodes
     CETreeNode *root = [[CETreeNode alloc] init];
-    root.data = 0;
+    root.data = @0;
     
     CETreeNode *node1 = [[CETreeNode alloc] init];
-    node1.data = 1;
+    node1.data = @1;
     
     CETreeNode *node2 = [[CETreeNode alloc] init];
-    node2.data = 2;
+    node2.data = @2;
     
     CETreeNode *node3 = [[CETreeNode alloc] init];
-    node3.data = 3;
+    node3.data = @3;
     
     CETreeNode *node4 = [[CETreeNode alloc] init];
-    node4.data = 4;
+    node4.data = @4;
     
     CETreeNode *node5 = [[CETreeNode alloc] init];
-    node5.data = 5;
+    node5.data = @5;
     
     CETreeNode *node6 = [[CETreeNode alloc] init];
-    node6.data = 6;
+    node6.data = @6;
     
     //assign nodes children
     root.left = node1;
@@ -137,6 +143,113 @@
      */
     
 }
+
+//4.2
+//- Given a directed graph, design an algorithm to find out whether there is a route between two nodes
+/*
+ determines if there is a route between any two nodes
+ */
+- (void)testTreesAndGraphs_testIfTwoNodesSharePath
+{
+    
+    //create nodes
+    CETreeNode *root = [[CETreeNode alloc] init];
+    root.data = @0;
+    
+    CETreeNode *node1 = [[CETreeNode alloc] init];
+    node1.data = @1;
+    
+    CETreeNode *node2 = [[CETreeNode alloc] init];
+    node2.data = @2;
+    
+    CETreeNode *node3 = [[CETreeNode alloc] init];
+    node3.data = @3;
+    
+    CETreeNode *node4 = [[CETreeNode alloc] init];
+    node4.data = @4;
+    
+    CETreeNode *node5 = [[CETreeNode alloc] init];
+    node5.data = @5;
+    
+    CETreeNode *node6 = [[CETreeNode alloc] init];
+    node6.data = @6;
+    
+    //assign nodes children
+    root.left = node1;
+    root.right = node2;
+    node1.left = node3;
+    node1.right = node4;
+    node2.left = node5;
+    node2.right = node6;
+    
+    XCTAssertFalse([CETreesAndGraphs isRouteBetweenTwoNodesWithFirstNode:node1 secondNode:node6], @"the two nodes should not have a route between them");
+    XCTAssertTrue([CETreesAndGraphs isRouteBetweenTwoNodesWithFirstNode:root secondNode:node6], @"the two nodes should have a route between them");
+    XCTAssertTrue([CETreesAndGraphs isRouteBetweenTwoNodesWithFirstNode:node2 secondNode:node6], @"the two nodes should have a route between them");
+    //test reverse
+    XCTAssertTrue([CETreesAndGraphs isRouteBetweenTwoNodesWithFirstNode:node6 secondNode:root], @"the two nodes should have a route between them");
+    XCTAssertTrue([CETreesAndGraphs isRouteBetweenTwoNodesWithFirstNode:node6 secondNode:node2], @"the two nodes should have a route between them");
+    
+}
+
+//4.3
+/*
+ creates tree with minimal height
+ */
+- (void)testTreesAndGraphs_testCreateTreeWithMinimalHeight
+{
+    /*
+    NSArray *array = @[@0,@1,@2,@3,@4,@5,@6,@7,@8,@9,@10,@11,@12,@13,@14,@15,@16,@17,@18,@19,@20];
+    
+    //create tree
+    
+    CETreeNode *root = [CETreesAndGraphs createTreeWithMinimalHeightWithArray:array];
+    
+    //print tree
+    
+    NSLog(@"\n\n createdTree, breadthFirst search with queue");
+    [CETreesAndGraphs breadthFirstTraversalUsingQueueWithNode:root];
+     */
+    
+}
+
+//- 4.4 Given a binary search tree, design an algorithm which creates a linked list of all the nodes at each depth (i e , if you have a tree with depth D, you’ll have D linked lists)
+/*
+ create linked list from tree node
+ */
+- (void)testTreesAndGraphs_testCreateLinkedListsWithTreeNode
+{
+    //create tree
+    NSArray *array = @[@0,@1,@2,@3,@4,@5,@6,@7,@8,@9,@10,@11,@12,@13,@14,@15,@16,@17,@18,@19,@20];
+    CETreeNode *root = [CETreesAndGraphs createTreeWithMinimalHeightWithArray:array];
+    
+    //create linked lists
+    NSMutableArray *arrayOfLinkedLists = [CETreesAndGraphs createLinkedListsFromNode:root];
+    
+    int i = 0;
+    
+    //loop through all linked lists
+    for(CELinkedNode *object in arrayOfLinkedLists){
+        
+        NSLog(@"\n\nlevel %i",i);
+        
+        CELinkedNode *currentLinkedNode = object;
+        
+        //traverse linked list
+        while(currentLinkedNode){
+            
+            //print current linkedNode
+            NSLog(@"node %@",((CETreeNode *)currentLinkedNode.data).data);
+            //set currentLinkedNode to nextLinkedNode
+            currentLinkedNode = currentLinkedNode.next;
+            
+        }
+        
+        i++;
+        
+    }
+    
+}
+
 
 
 

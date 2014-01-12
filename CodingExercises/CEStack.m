@@ -10,7 +10,7 @@
 
 @implementation CEStack
 
--(CEStack *)init
+-(instancetype)init
 {
     self = [super init];
     
@@ -58,7 +58,7 @@
 - (void)pushWithData:(id)data
 {
     //create new node
-    CENode *newNode = [[CENode alloc] initWithNodeData:data];
+    CENode *newNode = [[CENode alloc] initWithData:data];
     
     //set new node's next to top
     newNode.next = self.top;
@@ -74,7 +74,7 @@
 /*
  return top data and delete from stack
  */
-- (id <NSCopying>)pop
+- (id)pop
 {
     
     //if top is created
@@ -101,7 +101,7 @@
 /*
  return top data w/o popping it
  */
-- (id <NSCopying>)peek
+- (id)peek
 {
     //if top is created
     if(self.top){

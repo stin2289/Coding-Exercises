@@ -10,7 +10,7 @@
 
 @implementation CEQueue
 
--(CEQueue *)init
+-(instancetype)init
 {
     self = [super init];
     
@@ -20,13 +20,13 @@
     return self;
 }
 
--(void)enqueueWithData:(NSNumber *)data
+-(void)enqueueWithData:(id)data
 {
     
     //initial enqueuq
     if(!self.front){
         
-        self.back = [[CENode alloc] initWithNodeData:data];
+        self.back = [[CENode alloc] initWithData:data];
         
         //set front and back to the same node
         self.front = self.back;
@@ -34,13 +34,13 @@
     }
     else{
         //assign next node for the back
-        self.back.next = [[CENode alloc] initWithNodeData:data];
+        self.back.next = [[CENode alloc] initWithData:data];
         self.back = self.back.next;
     }
     
 }
 
--(NSNumber *)dequeue
+-(id)dequeue
 {
     if(self.front){
         

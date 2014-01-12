@@ -26,7 +26,7 @@
     // Put setup code here; it will be run once, before the first test case.
     
     //head 1
-    self.head1 = [[CELinkedNode alloc] initWithNodeData:[NSNumber numberWithInt:0]];
+    self.head1 = [[CELinkedNode alloc] initWithData:[NSNumber numberWithInt:0]];
     [self.head1 appendToTail:[NSNumber numberWithInt:1]];
     [self.head1 appendToTail:[NSNumber numberWithInt:2]];
     [self.head1 appendToTail:[NSNumber numberWithInt:3]];
@@ -36,7 +36,7 @@
     
     
     //head 2
-    self.head2 = [[CELinkedNode alloc] initWithNodeData:[NSNumber numberWithInt:0]];
+    self.head2 = [[CELinkedNode alloc] initWithData:[NSNumber numberWithInt:0]];
     [self.head2 appendToTail:[NSNumber numberWithInt:1]];
     [self.head2 appendToTail:[NSNumber numberWithInt:2]];
     [self.head2 appendToTail:[NSNumber numberWithInt:3]];
@@ -111,7 +111,7 @@
     
     CELinkedNode *n2 = [self returnNodeAtIndex:3 Head:self.head1];
     
-    XCTAssertFalse([n2.data intValue] == [n1Data intValue],@"should remove node");
+    XCTAssertFalse([((NSNumber *)n2.data) intValue] == [((NSNumber *)n1Data) intValue],@"should remove node");
 
 }
 
@@ -119,15 +119,15 @@
 - (void)testLinkedLists_testAddingNumberNodes
 {
     //head 1
-    CELinkedNode *firstNumber = [[CELinkedNode alloc] initWithNodeData:[NSNumber numberWithInt:2]];
+    CELinkedNode *firstNumber = [[CELinkedNode alloc] initWithData:[NSNumber numberWithInt:2]];
     [firstNumber appendToTail:[NSNumber numberWithInt:2]];
     [firstNumber appendToTail:[NSNumber numberWithInt:2]];
     
-    CELinkedNode *secondNumber = [[CELinkedNode alloc] initWithNodeData:[NSNumber numberWithInt:3]];
+    CELinkedNode *secondNumber = [[CELinkedNode alloc] initWithData:[NSNumber numberWithInt:3]];
     [secondNumber appendToTail:[NSNumber numberWithInt:3]];
     [secondNumber appendToTail:[NSNumber numberWithInt:3]];
     
-    CELinkedNode *thirdNumber = [[CELinkedNode alloc] initWithNodeData:[NSNumber numberWithInt:3]];
+    CELinkedNode *thirdNumber = [[CELinkedNode alloc] initWithData:[NSNumber numberWithInt:3]];
     [thirdNumber appendToTail:[NSNumber numberWithInt:3]];
     [thirdNumber appendToTail:[NSNumber numberWithInt:4]];
     
@@ -162,7 +162,7 @@
 - (void)testLinkedLists_testCorruptLinkedList
 {
     //head 1
-    CELinkedNode *firstNumber = [[CELinkedNode alloc] initWithNodeData:[NSNumber numberWithInt:2]];
+    CELinkedNode *firstNumber = [[CELinkedNode alloc] initWithData:[NSNumber numberWithInt:2]];
     [firstNumber appendToTail:[NSNumber numberWithInt:2]];
     [firstNumber appendToTail:[NSNumber numberWithInt:2]];
     [firstNumber appendToTail:[NSNumber numberWithInt:2]];
@@ -170,7 +170,7 @@
     [firstNumber appendToTail:[NSNumber numberWithInt:2]];
     [firstNumber appendToTail:[NSNumber numberWithInt:2]];
     
-    CELinkedNode *secondNumber = [[CELinkedNode alloc] initWithNodeData:[NSNumber numberWithInt:3]];
+    CELinkedNode *secondNumber = [[CELinkedNode alloc] initWithData:[NSNumber numberWithInt:3]];
     [secondNumber appendToTail:[NSNumber numberWithInt:3]];
     [secondNumber appendToTail:[NSNumber numberWithInt:3]];
     [secondNumber appendToTail:[NSNumber numberWithInt:3]];
@@ -207,10 +207,10 @@
     while(n.next != NULL) {
         
         //if the value is in the dictionary, return YES
-        if([data objectForKey:[n.data stringValue]])
+        if([data objectForKey:[((NSNumber *)n.data) stringValue]])
             return YES;
         else
-            [data setValue:[NSNumber numberWithBool:YES] forKey:[n.data stringValue]];
+            [data setValue:[NSNumber numberWithBool:YES] forKey:[((NSNumber *)n.data) stringValue]];
         
         //interate to next node
         n = n.next;
@@ -247,7 +247,7 @@
     CELinkedNode *n2 = secondNode;
     
     //initial comparison
-    if([n1.data intValue] != [n2.data intValue])
+    if([((NSNumber *)n1.data) intValue] != [((NSNumber *)n2.data) intValue])
         return NO;
     
     //next comparisons
@@ -256,7 +256,7 @@
         n1 = n1.next;
         n2 = n2.next;
         
-        if([n1.data intValue] != [n2.data intValue])
+        if([((NSNumber *)n1.data) intValue] != [((NSNumber *)n2.data) intValue])
             return NO;
 
     }

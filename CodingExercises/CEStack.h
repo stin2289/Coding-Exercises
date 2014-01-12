@@ -14,17 +14,19 @@
 @property (nonatomic) CENode *top;
 @property (nonatomic) int count;
 
--(void)pushWithData:(id <NSCopying>)data;
+-(instancetype)init;
+
+-(void)pushWithData:(id)data;
 
 /*
  return top data and delete from stack
  */
-- (id <NSCopying>)pop;
+- (id)pop;
 
 /*
  return top data w/o popping it
  */
-- (id <NSCopying>)peek;
+- (id)peek;
 
 /*
  print contents of stack

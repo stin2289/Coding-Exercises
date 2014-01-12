@@ -11,6 +11,8 @@
 
 @interface CESetOfStacks : CEStack
 
+- (instancetype)init;
+
 -(CESetOfStacks *)initWithThreshold:(int)threshold;
 
 @end

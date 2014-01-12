@@ -13,29 +13,29 @@
 -(CELinkedNode *)init{
     
     self = [super init];
-    self.next = NULL;
-    self.data = NULL;
+    self.next = nil;
+    self.data = nil;
     
     return self;
     
 }
 
--(CELinkedNode *)initWithNodeData:(NSNumber *)data{
+-(CELinkedNode *)initWithData:(id)data{
     
     self = [super init];
-    self.next = NULL;
+    self.next = nil;
     self.data = data;
     
     return  self;
 }
 
--(void)appendToTail:(NSNumber *)data{
+-(void)appendToTail:(id)data{
     
-    CELinkedNode *end = [[CELinkedNode alloc] initWithNodeData:data];
+    CELinkedNode *end = [[CELinkedNode alloc] initWithData:data];
     CELinkedNode *n = self;
 
     //loop through til you find end, and set as next
-    while (n.next != NULL) {
+    while (n.next != nil) {
         n = n.next;
     }
     
@@ -46,23 +46,24 @@
 
 
 //returns the current head and sets next
--(CELinkedNode *)deleteNode:(CELinkedNode *)head Data:(NSNumber *)data{
+//only works with NSNumber
+-(CELinkedNode *)deleteNode:(CELinkedNode *)head Data:(id)data{
     
     CELinkedNode *n = head;
     
     //if the head is the node that should be deleted, return next node(new head)
     //resetting the head
-    if ([n.data intValue] == [data intValue]) {
+    if ([((NSNumber *)n.data) intValue] == [((NSNumber *)data) intValue]) {
         //moved head
         return head.next;
     }
     
 
     //loop through nodes until null
-    while (n.next != NULL) {
+    while (!n.next) {
         
         //if the next data equals passed in data
-        if ([n.next.data intValue] == [data intValue]) {
+        if ([((NSNumber *)n.next.data) intValue] == [((NSNumber *)data) intValue]) {
             
             //set next equal to next next
             //basically skipping the current n.next

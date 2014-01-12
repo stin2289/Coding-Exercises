@@ -10,7 +10,7 @@
 
 @interface CETreeNode : NSObject <NSCopying>
 
-@property (nonatomic) int data;
+@property (nonatomic) id data;
 
 @property (nonatomic) CETreeNode *left;
 @property (nonatomic) CETreeNode *right;

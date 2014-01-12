@@ -23,13 +23,13 @@
     while(n.next != NULL){
         
         //if the data value exists, remove
-        if([data objectForKey:[n.data stringValue]]){
+        if([data objectForKey:[((NSNumber *)n.data) stringValue]]){
             //set previous node's next to the new head
             prev.next = [n deleteNode:n Data:n.data];
         }
         else{
             //sets the value of the dictionary and progresses to next item
-            [data setObject:[NSNumber numberWithBool:YES] forKey:[n.data stringValue]];
+            [data setObject:[NSNumber numberWithBool:YES] forKey:[((NSNumber *)n.data) stringValue]];
             //set previous
             prev = n;
         }
@@ -56,7 +56,7 @@
         //loop through all nodes
         while(n2.next != NULL){
             
-            if([n2.data intValue] == [n.data intValue])
+            if([((NSNumber *)n2.data) intValue] == [((NSNumber *)n.data) intValue])
                 prev2.next = n2.next;
             
             prev2 = n2;
@@ -152,13 +152,13 @@
     
     CELinkedNode *n = head;
     
-    int total = [n.data intValue];
+    int total = [((NSNumber *)n.data) intValue];
     int i = 1;
     
     //loop through all nodes
     while(n.next != NULL){
         n = n.next;
-        total += [n.data intValue] * pow(10,i);
+        total += [((NSNumber *)n.data) intValue] * pow(10,i);
         i++;
     }
     
@@ -184,7 +184,7 @@
     int digit = total % 10;
     
     //create head
-    CELinkedNode *head = [[CELinkedNode alloc] initWithNodeData:[NSNumber numberWithInt:digit]];
+    CELinkedNode *head = [[CELinkedNode alloc] initWithData:[NSNumber numberWithInt:digit]];
     
     //subtract digit value from total
     total -= digit;

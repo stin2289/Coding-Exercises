@@ -12,12 +12,12 @@
 
 @interface CEMyQueue: NSObject
 
-- (CEMyQueue *)init;
+- (instancetype)init;
 
 /*
  push object onto stack 1
  */
-- (void)enqueueWithObject:(id<NSCopying>)object;
+- (void)enqueueWithObject:(id)object;
 
 /*
  pop all contents from stack1 to stack2
@@ -25,7 +25,7 @@
  pop all contents from stack2 to stack1
  return tempObject
  */
-- (id <NSCopying>)dequeue;
+- (id)dequeue;
 
 @end
 

@@ -10,10 +10,10 @@
 
 @implementation CEStackWithMinimum
 
-- (void)pushWithData:(id <NSCopying>)data
+- (void)pushWithData:(id)data
 {
     
-    CENodeWithMinimum *newNode = [[CENodeWithMinimum alloc] initWithNodeData:(NSNumber *)data];
+    CENodeWithMinimum *newNode = [[CENodeWithMinimum alloc] initWithData:(NSNumber *)data];
     
     //set top as the new node's next
     newNode.next = self.top;
@@ -37,13 +37,13 @@
     
 }
 
-- (id <NSCopying>)pop
+- (id)pop
 {
     //if top is allocated
     if(self.top){
         
         //set data to return
-        NSNumber *topData = (NSNumber *)self.top.data;
+        id topData = self.top.data;
         
         //set new top
         self.top = self.top.next;
@@ -55,7 +55,7 @@
     return nil;
 }
 
-- (id <NSCopying>)minimum
+- (id)minimum
 {
     //if top is allocated
     if(self.top){

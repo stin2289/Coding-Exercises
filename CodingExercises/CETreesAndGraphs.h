@@ -45,5 +45,24 @@
  */
 + (void)breadthFirstTraversalUsingQueueWithNode:(CETreeNode *)node;
 
+//4.2
+//- Given a directed graph, design an algorithm to find out whether there is a route between two nodes
+/*
+ determines if there is a route between any two nodes
+ */
++ (BOOL)isRouteBetweenTwoNodesWithFirstNode:(CETreeNode *)firstNode secondNode:(CETreeNode *)secondNode;
+
+//4.3
+/*
+ creates tree with minimal height
+ */
++ (CETreeNode *)createTreeWithMinimalHeightWithArray:(NSArray *)array;
+
+//- 4.4 Given a binary search tree, design an algorithm which creates a linked list of all the nodes at each depth (i e , if you have a tree with depth D, you’ll have D linked lists)
+/*
+ create linked list from tree node
+ */
++ (NSMutableArray *)createLinkedListsFromNode:(CETreeNode *)node;
+
 
 @end

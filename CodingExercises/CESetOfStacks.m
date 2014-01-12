@@ -21,7 +21,7 @@
 
 @implementation CESetOfStacks
 
-- (CESetOfStacks *)init
+- (instancetype)init
 {
     self = [super init];
     
@@ -50,7 +50,7 @@
     
 }
 
-- (void)pushWithData:(id <NSCopying>)data
+- (void)pushWithData:(id)data
 {
     
     //if the stack size hasn’t reached the threshold
@@ -77,7 +77,7 @@
 
 }
 
-- (id <NSCopying>)pop
+- (id)pop
 {
     //if the current stack top has a value
     if(self.currentStack.top){

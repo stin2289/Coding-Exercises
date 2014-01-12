@@ -10,7 +10,7 @@
 
 @implementation CENode
 
--(CENode *)init{
+-(instancetype)init{
     
     self = [super init];
     self.next = NULL;
@@ -20,10 +20,10 @@
     
 }
 
--(CENode *)initWithNodeData:(NSNumber *)data{
+-(instancetype)initWithData:(id)data{
     
     self = [super init];
-    self.next = NULL;
+    self.next = nil;
     self.data = data;
     
     return  self;

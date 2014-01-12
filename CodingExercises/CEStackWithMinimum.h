@@ -13,8 +13,8 @@
 
 @property (nonatomic) CENodeWithMinimum *top;
 
-- (void)pushWithData:(NSNumber *)data;
-- (NSNumber *)pop;
+- (void)pushWithData:(id)data;
+- (id)pop;
 
 //returns the minimum value in the stack
 - (NSNumber *)minimum;
