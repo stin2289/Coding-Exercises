@@ -35,6 +35,8 @@
 		D938B1C7183020480051BA7F /* CEDataStructures.m in Sources */ = {isa = PBXBuildFile; fileRef = D938B1C6183020480051BA7F /* CEDataStructures.m */; };
 		D95C0C3E186748090002C29B /* CETowersOfHanoi.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C0C3D186748090002C29B /* CETowersOfHanoi.m */; };
 		D95C0C411867E8550002C29B /* CETower.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C0C401867E8550002C29B /* CETower.m */; };
+		D9796C771883613E00CD37E8 /* CEBitManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = D9796C761883613E00CD37E8 /* CEBitManipulation.m */; };
+		D9796C791883615A00CD37E8 /* CEBitManipulationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9796C781883615A00CD37E8 /* CEBitManipulationTests.m */; };
 		D98E0389187CFCFA0035A47D /* CETreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D98E0388187CFCFA0035A47D /* CETreeNode.m */; };
 		D98E038C187CFE050035A47D /* CETreesAndGraphs.m in Sources */ = {isa = PBXBuildFile; fileRef = D98E038B187CFE050035A47D /* CETreesAndGraphs.m */; };
 		D98E038E187D06FE0035A47D /* CETreesAndGraphsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D98E038D187D06FE0035A47D /* CETreesAndGraphsTests.m */; };
@@ -97,6 +99,9 @@
 		D95C0C3D186748090002C29B /* CETowersOfHanoi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CETowersOfHanoi.m; sourceTree = "<group>"; };
 		D95C0C3F1867E8550002C29B /* CETower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CETower.h; sourceTree = "<group>"; };
 		D95C0C401867E8550002C29B /* CETower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CETower.m; sourceTree = "<group>"; };
+		D9796C751883613E00CD37E8 /* CEBitManipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEBitManipulation.h; sourceTree = "<group>"; };
+		D9796C761883613E00CD37E8 /* CEBitManipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEBitManipulation.m; sourceTree = "<group>"; };
+		D9796C781883615A00CD37E8 /* CEBitManipulationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEBitManipulationTests.m; sourceTree = "<group>"; };
 		D98E0387187CFCFA0035A47D /* CETreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CETreeNode.h; sourceTree = "<group>"; };
 		D98E0388187CFCFA0035A47D /* CETreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CETreeNode.m; sourceTree = "<group>"; };
 		D98E038A187CFE050035A47D /* CETreesAndGraphs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CETreesAndGraphs.h; sourceTree = "<group>"; };
@@ -175,6 +180,8 @@
 				D91C284B184EA7390021EB76 /* CELinkedLists.m */,
 				D95C0C3C186748090002C29B /* CETowersOfHanoi.h */,
 				D95C0C3D186748090002C29B /* CETowersOfHanoi.m */,
+				D9796C751883613E00CD37E8 /* CEBitManipulation.h */,
+				D9796C761883613E00CD37E8 /* CEBitManipulation.m */,
 				D938B1A5182EDA510051BA7F /* CEAppDelegate.h */,
 				D938B1A6182EDA510051BA7F /* CEAppDelegate.m */,
 				D95C0C3B18663D690002C29B /* Models */,
@@ -202,6 +209,7 @@
 				D91C2852184EBE2F0021EB76 /* CELinkedListsTests.m */,
 				D9021D6618639A4300CB3C35 /* CEStacksAndQueuesTests.m */,
 				D98E038D187D06FE0035A47D /* CETreesAndGraphsTests.m */,
+				D9796C781883615A00CD37E8 /* CEBitManipulationTests.m */,
 				D938B1B6182EDA510051BA7F /* Supporting Files */,
 			);
 			path = CodingExercisesTests;
@@ -365,6 +373,7 @@
 				D95C0C411867E8550002C29B /* CETower.m in Sources */,
 				D9021D6218637D3400CB3C35 /* CENodeWithMinimum.m in Sources */,
 				D938B1C7183020480051BA7F /* CEDataStructures.m in Sources */,
+				D9796C771883613E00CD37E8 /* CEBitManipulation.m in Sources */,
 				D9021D651863968100CB3C35 /* CEStacksAndQueues.m in Sources */,
 				D938B1A3182EDA510051BA7F /* main.m in Sources */,
 			);
@@ -382,6 +391,7 @@
 				D938B1BC182EDA510051BA7F /* CEDataStructuresTests.m in Sources */,
 				D9BF2AA11877753F0058DA0E /* CEMyQueue.m in Sources */,
 				D9BF2AA6187781610058DA0E /* CEStack+Sorting.m in Sources */,
+				D9796C791883615A00CD37E8 /* CEBitManipulationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
