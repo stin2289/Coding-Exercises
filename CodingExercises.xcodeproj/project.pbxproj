@@ -16,9 +16,7 @@
 		D9021D6A18639D2000CB3C35 /* CEStackWithMinimum.m in Sources */ = {isa = PBXBuildFile; fileRef = D9021D6918639D2000CB3C35 /* CEStackWithMinimum.m */; };
 		D9021D6D1863BA3500CB3C35 /* CESetOfStacks.m in Sources */ = {isa = PBXBuildFile; fileRef = D9021D6C1863BA3500CB3C35 /* CESetOfStacks.m */; };
 		D91C284C184EA7390021EB76 /* CELinkedLists.m in Sources */ = {isa = PBXBuildFile; fileRef = D91C284B184EA7390021EB76 /* CELinkedLists.m */; };
-		D91C284D184EA7390021EB76 /* CELinkedLists.m in Sources */ = {isa = PBXBuildFile; fileRef = D91C284B184EA7390021EB76 /* CELinkedLists.m */; };
 		D91C2850184EA8E70021EB76 /* CELinkedNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D91C284F184EA8E70021EB76 /* CELinkedNode.m */; };
-		D91C2851184EA8E70021EB76 /* CELinkedNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D91C284F184EA8E70021EB76 /* CELinkedNode.m */; };
 		D91C2853184EBE2F0021EB76 /* CELinkedListsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D91C2852184EBE2F0021EB76 /* CELinkedListsTests.m */; };
 		D938B197182EDA510051BA7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D938B196182EDA510051BA7F /* Foundation.framework */; };
 		D938B199182EDA510051BA7F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D938B198182EDA510051BA7F /* CoreGraphics.framework */; };
@@ -41,9 +39,10 @@
 		D98E038C187CFE050035A47D /* CETreesAndGraphs.m in Sources */ = {isa = PBXBuildFile; fileRef = D98E038B187CFE050035A47D /* CETreesAndGraphs.m */; };
 		D98E038E187D06FE0035A47D /* CETreesAndGraphsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D98E038D187D06FE0035A47D /* CETreesAndGraphsTests.m */; };
 		D9BF2AA01877753F0058DA0E /* CEMyQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BF2A9F1877753F0058DA0E /* CEMyQueue.m */; };
-		D9BF2AA11877753F0058DA0E /* CEMyQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BF2A9F1877753F0058DA0E /* CEMyQueue.m */; };
 		D9BF2AA5187781610058DA0E /* CEStack+Sorting.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BF2AA4187781610058DA0E /* CEStack+Sorting.m */; };
 		D9BF2AA6187781610058DA0E /* CEStack+Sorting.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BF2AA4187781610058DA0E /* CEStack+Sorting.m */; };
+		D9E7FE42188C4F14002D74A7 /* CERecursion.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E7FE41188C4F14002D74A7 /* CERecursion.m */; };
+		D9E7FE44188C4F2A002D74A7 /* CERecursionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E7FE43188C4F2A002D74A7 /* CERecursionTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +110,9 @@
 		D9BF2A9F1877753F0058DA0E /* CEMyQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEMyQueue.m; sourceTree = "<group>"; };
 		D9BF2AA3187781610058DA0E /* CEStack+Sorting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CEStack+Sorting.h"; sourceTree = "<group>"; };
 		D9BF2AA4187781610058DA0E /* CEStack+Sorting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CEStack+Sorting.m"; sourceTree = "<group>"; };
+		D9E7FE40188C4F14002D74A7 /* CERecursion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CERecursion.h; path = ../CERecursion.h; sourceTree = "<group>"; };
+		D9E7FE41188C4F14002D74A7 /* CERecursion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CERecursion.m; path = ../CERecursion.m; sourceTree = "<group>"; };
+		D9E7FE43188C4F2A002D74A7 /* CERecursionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CERecursionTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,8 @@
 		D938B19C182EDA510051BA7F /* CodingExercises */ = {
 			isa = PBXGroup;
 			children = (
+				D9E7FE40188C4F14002D74A7 /* CERecursion.h */,
+				D9E7FE41188C4F14002D74A7 /* CERecursion.m */,
 				D98E038A187CFE050035A47D /* CETreesAndGraphs.h */,
 				D98E038B187CFE050035A47D /* CETreesAndGraphs.m */,
 				D938B1C5183020480051BA7F /* CEDataStructures.h */,
@@ -210,6 +214,7 @@
 				D9021D6618639A4300CB3C35 /* CEStacksAndQueuesTests.m */,
 				D98E038D187D06FE0035A47D /* CETreesAndGraphsTests.m */,
 				D9796C781883615A00CD37E8 /* CEBitManipulationTests.m */,
+				D9E7FE43188C4F2A002D74A7 /* CERecursionTests.m */,
 				D938B1B6182EDA510051BA7F /* Supporting Files */,
 			);
 			path = CodingExercisesTests;
@@ -371,6 +376,7 @@
 				D9021D5C1863705C00CB3C35 /* CENode.m in Sources */,
 				D95C0C3E186748090002C29B /* CETowersOfHanoi.m in Sources */,
 				D95C0C411867E8550002C29B /* CETower.m in Sources */,
+				D9E7FE42188C4F14002D74A7 /* CERecursion.m in Sources */,
 				D9021D6218637D3400CB3C35 /* CENodeWithMinimum.m in Sources */,
 				D938B1C7183020480051BA7F /* CEDataStructures.m in Sources */,
 				D9796C771883613E00CD37E8 /* CEBitManipulation.m in Sources */,
@@ -385,11 +391,9 @@
 			files = (
 				D98E038E187D06FE0035A47D /* CETreesAndGraphsTests.m in Sources */,
 				D91C2853184EBE2F0021EB76 /* CELinkedListsTests.m in Sources */,
-				D91C284D184EA7390021EB76 /* CELinkedLists.m in Sources */,
-				D91C2851184EA8E70021EB76 /* CELinkedNode.m in Sources */,
+				D9E7FE44188C4F2A002D74A7 /* CERecursionTests.m in Sources */,
 				D9021D6718639A4300CB3C35 /* CEStacksAndQueuesTests.m in Sources */,
 				D938B1BC182EDA510051BA7F /* CEDataStructuresTests.m in Sources */,
-				D9BF2AA11877753F0058DA0E /* CEMyQueue.m in Sources */,
 				D9BF2AA6187781610058DA0E /* CEStack+Sorting.m in Sources */,
 				D9796C791883615A00CD37E8 /* CEBitManipulationTests.m in Sources */,
 			);
