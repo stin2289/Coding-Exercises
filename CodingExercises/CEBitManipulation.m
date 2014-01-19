@@ -128,4 +128,56 @@
 }
 
 
+//5.3
+//- Given an integer, print the next smallest and next largest number that have the same number of 1 bits in their binary representation
++ (NSArray *)returnNextLargestAndSmallestIntegersWithNumber:(NSInteger)number
+{
+    
+    //calculate number of one bits
+    NSInteger numberOfOneBits = [self numberOfOneBitsWithNumber:number];
+    
+    NSInteger nextLargestNumber = number;
+    
+    //add one to number until it has the same number of one bits
+    do{
+        nextLargestNumber++;
+    }while(numberOfOneBits != [self numberOfOneBitsWithNumber:nextLargestNumber]);
+    
+    NSInteger nextSmallestNumber = number;
+    
+    //remove one from the number until it has the same number of one bits
+    do{
+        nextSmallestNumber--;
+    }while(nextSmallestNumber > 0 && numberOfOneBits != [self numberOfOneBitsWithNumber:nextSmallestNumber]);
+    
+    return @[@(nextSmallestNumber),@(nextLargestNumber)];
+    
+}
+
+/*
+ returns number of ‘on’ bits in a number
+ */
++ (NSInteger)numberOfOneBitsWithNumber:(NSInteger)number
+{
+    
+    NSInteger numberOfOneBits = 0;
+    
+    //while number is greater than 0
+    while(number > 0){
+        
+        //if number has the first bit ‘on'
+        if(number % 2 != 0)
+            numberOfOneBits++;
+        
+        number >>= 1;
+        
+    }
+    
+    return numberOfOneBits;
+    
+}
+
+
+
+
 @end

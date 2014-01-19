@@ -64,17 +64,28 @@
     NSString *string1 = @"11.1011100";
     NSString *string2 = [CEBitManipulation binaryRepresentationOfString:@"3.72"];
     string2 = [string2 substringWithRange:NSMakeRange(0, 10)];
-    XCTAssertTrue([string1 isEqualToString:string2], @"returned String should be correct value");
+    XCTAssertTrue([string1 isEqualToString:string2], @"returned String is not correct value");
     
     //compare strings
     //make same length
     string1 = @"101110.0000100111";
     string2 = [CEBitManipulation binaryRepresentationOfString:@"46.038283"];
     string2 = [string2 substringWithRange:NSMakeRange(0, 17)];
-    XCTAssertTrue([string1 isEqualToString:string2], @"returned String should be correct value");
+    XCTAssertTrue([string1 isEqualToString:string2], @"returned String is not correct value");
     
 }
 
+//5.3
+//- Given an integer, print the next smallest and next largest number that have the same number of 1 bits in their binary representation
+- (void)testBitManipulation_testReturnNextSmallestNumberAndNextLargestNumber
+{
+    
+    //21-10101,22-10110,19-10011
+    NSArray *returnNumbersArray = [CEBitManipulation returnNextLargestAndSmallestIntegersWithNumber:21];
+    
+    XCTAssertTrue([returnNumbersArray[0] isEqualToValue:@19] && [returnNumbersArray[1] isEqualToValue:@22], @"function didn't next largest and next smallest numbers with the same amount of bits");
+    
+}
 
 
 @end
