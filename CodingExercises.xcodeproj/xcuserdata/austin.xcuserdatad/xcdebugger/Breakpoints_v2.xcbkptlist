@@ -2666,11 +2666,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercises/CEBitManipulation.m"
-            timestampString = "411268934.841862"
+            timestampString = "411765981.458832"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "+insertBitsWithN:m:i:j:"
             landmarkType = "5">
          </BreakpointContent>
@@ -2682,12 +2682,90 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodingExercises/CEBitManipulation.m"
-            timestampString = "411268934.841862"
+            timestampString = "411765981.458832"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "+insertBitsWithN:m:i:j:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodingExercises/CEBitManipulation.m"
+            timestampString = "411797665.0502"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "+binaryRepresentationOfString:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodingExercisesTests/CEBitManipulationTests.m"
+            timestampString = "411797354.917647"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "-testBitManipulation_testPrintingBinaryRepresentationOfString"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CEBitManipulationTests testBitManipulation_testPrintingBinaryRepresentationOfString]"
+                  moduleName = "CodingExercisesTests"
+                  urlString = "file:///Users/austin/Documents/Code/CodingExercises/CodingExercisesTests/CEBitManipulationTests.m"
+                  timestampString = "411797665.681499"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "197">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CEBitManipulationTests testBitManipulation_testPrintingBinaryRepresentationOfString]"
+                  moduleName = "CodingExercisesTests"
+                  urlString = "file:///Users/austin/Documents/Code/CodingExercises/CodingExercisesTests/CEBitManipulationTests.m"
+                  timestampString = "411797665.681743"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "581">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodingExercises/CEBitManipulation.m"
+            timestampString = "411797496.697175"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "+binaryRepresentationOfString:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

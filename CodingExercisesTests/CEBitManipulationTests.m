@@ -53,6 +53,28 @@
     
 }
 
+//5.2
+//Given a (decimal - e.g. 3.72)number that is passed in as a string
+//print the binary representation
+//If the number can not be represented accurately in binary, print “ERROR”
+- (void)testBitManipulation_testPrintingBinaryRepresentationOfString
+{
+    //compare strings
+    //make same length
+    NSString *string1 = @"11.1011100";
+    NSString *string2 = [CEBitManipulation binaryRepresentationOfString:@"3.72"];
+    string2 = [string2 substringWithRange:NSMakeRange(0, 10)];
+    XCTAssertTrue([string1 isEqualToString:string2], @"returned String should be correct value");
+    
+    //compare strings
+    //make same length
+    string1 = @"101110.0000100111";
+    string2 = [CEBitManipulation binaryRepresentationOfString:@"46.038283"];
+    string2 = [string2 substringWithRange:NSMakeRange(0, 17)];
+    XCTAssertTrue([string1 isEqualToString:string2], @"returned String should be correct value");
+    
+}
+
 
 
 @end

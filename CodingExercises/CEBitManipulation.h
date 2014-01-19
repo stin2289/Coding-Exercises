@@ -22,4 +22,10 @@
 //Output: N = 10001010100
 + (int)insertBitsWithN:(int)n m:(int)m i:(int)i j:(int)j;
 
+//5.2
+//Given a (decimal - e.g. 3.72)number that is passed in as a string
+//print the binary representation
+//If the number can not be represented accurately in binary, print “ERROR”
++ (NSString *)binaryRepresentationOfString:(NSString *)string;
+
 @end
