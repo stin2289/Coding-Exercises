@@ -16,4 +16,20 @@
 //adds previous two numbers to create next number
 + (NSInteger) generateNthFibonacciNumberWithN:(NSInteger)n;
 
+//8.2
+//- Imagine a robot sitting on the upper left hand corner of an NxN grid
+//The robot can only move in two directions: right and down
+//How many possible paths are there for the robot?
++ (NSInteger)possibleMovesInGridWithSizeN:(NSInteger)n xPosition:(NSInteger)xPosition yPosition:(NSInteger)yPosition;
+
+//8.3
+//- Write a method that returns all subsets of a set
++ (NSMutableArray *)returnSubsetsOfSet:(NSSet *)set;
+
+//8.4
+//- Write a method to compute all permutations of a string
++ (NSMutableArray *)getPermutationsOfString:(NSString *)string;
+
+
+
 @end

@@ -39,4 +39,58 @@
     
 }
 
+//8.2
+//- Imagine a robot sitting on the upper left hand corner of an NxN grid
+//The robot can only move in two directions: right and down
+//How many possible paths are there for the robot?
+- (void)testRecursion_testPathsInGrid
+{
+    
+    XCTAssertEqual(0, [CERecursion possibleMovesInGridWithSizeN:1 xPosition:0 yPosition:0], @"number of paths returned is not correct");
+    XCTAssertEqual(4, [CERecursion possibleMovesInGridWithSizeN:2 xPosition:0 yPosition:0], @"number of paths returned is not correct");
+    XCTAssertEqual(18, [CERecursion possibleMovesInGridWithSizeN:3 xPosition:0 yPosition:0], @"number of paths returned is not correct");
+       
+}
+
+//8.3
+//- Write a method that returns all subsets of a set
+- (void)testRecursion_testReturnSubsets
+{
+    /*
+    NSSet *newSet = [NSSet setWithObjects:@1,@2,@3,@4, nil];
+    
+    NSMutableArray *subsets = [CERecursion returnSubsetsOfSet:newSet];
+    
+    //loop through subsets and print
+    for(NSSet *subset in subsets){
+        for(id object in subset)
+            printf("%i" ,[((NSNumber *)object) intValue]);
+        
+        printf("\n");
+        
+    }
+    */
+    
+}
+
+//8.4
+//- Write a method to compute all permutations of a string
+- (void)testRecursion_testReturnPermutationsOfString
+{
+    
+    NSMutableArray *permutations = [CERecursion getPermutationsOfString:@"two"];
+    
+    XCTAssertTrue([permutations containsObject:@"two"] &&
+                  [permutations containsObject:@"tow"] &&
+                  [permutations containsObject:@"wto"] &&
+                  [permutations containsObject:@"wot"] &&
+                  [permutations containsObject:@"owt"] &&
+                  [permutations containsObject:@"otw"] && [permutations count] == 6, @"permutations array doesn't contain correct values");
+    
+    
+    
+}
+
+
+
 @end
