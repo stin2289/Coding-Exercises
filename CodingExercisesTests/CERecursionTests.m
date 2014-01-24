@@ -56,20 +56,20 @@
 //- Write a method that returns all subsets of a set
 - (void)testRecursion_testReturnSubsets
 {
-    /*
+    
     NSSet *newSet = [NSSet setWithObjects:@1,@2,@3,@4, nil];
     
     NSMutableArray *subsets = [CERecursion returnSubsetsOfSet:newSet];
     
     //loop through subsets and print
     for(NSSet *subset in subsets){
-        for(id object in subset)
-            printf("%i" ,[((NSNumber *)object) intValue]);
-        
-        printf("\n");
+        for(id object in subset){
+         //   printf("%i" ,[((NSNumber *)object) intValue]);
+        }
+        //printf("\n");
         
     }
-    */
+    
     
 }
 
@@ -86,8 +86,6 @@
                   [permutations containsObject:@"wot"] &&
                   [permutations containsObject:@"owt"] &&
                   [permutations containsObject:@"otw"] && [permutations count] == 6, @"permutations array doesn't contain correct values");
-    
-    
     
 }
 

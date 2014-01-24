@@ -230,7 +230,7 @@
     //loop through all linked lists
     for(CELinkedNode *object in arrayOfLinkedLists){
         
-        NSLog(@"\n\nlevel %i",i);
+       // NSLog(@"\n\nlevel %i",i);
         
         CELinkedNode *currentLinkedNode = object;
         
@@ -238,7 +238,7 @@
         while(currentLinkedNode){
             
             //print current linkedNode
-            NSLog(@"node %@",((CETreeNode *)currentLinkedNode.data).data);
+         //   NSLog(@"node %@",((CETreeNode *)currentLinkedNode.data).data);
             //set currentLinkedNode to nextLinkedNode
             currentLinkedNode = currentLinkedNode.next;
             

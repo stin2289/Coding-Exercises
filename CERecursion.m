@@ -97,9 +97,8 @@
 
     //add character to permutations of word
     for(NSString *word in words)
-        for(int j = 0; j <= [word length]; j++){
+        for(int j = 0; j <= [word length]; j++)
             [permutations addObject:[self insertChar:first inWord:word atIndex:j]];
-        }
 
 
     return permutations;
