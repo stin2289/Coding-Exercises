@@ -43,7 +43,7 @@
         c[k++] = b[j++];
     }
     
-    return c;
+    return [c copy];
     
 }
 
@@ -80,10 +80,152 @@
         
     }
     
-    return arrayOfArrays[i-1][0];
+    return [arrayOfArrays[i-1][0] copy];
     
 }
 
+//bubble sort
++ (NSArray *)bubbleSortArrayWithInputArray:(NSMutableArray *)inputArray
+{
+    //loop n number of times
+    for(int i = 0; i < [inputArray count]; i++)
+        //nested loop through n - 1 times
+        for(int j = 0; j < [inputArray count] - 1; j++)
+            //if j > j+1
+            if([inputArray[j] compare:inputArray[j+1]] == NSOrderedDescending){
+                //swap values
+                NSNumber *temp = inputArray[j+1];
+                inputArray[j+1] = inputArray[j];
+                inputArray[j] = temp;
+            }
+            
+    
+    return [inputArray copy];
+}
+
+//selection sort
++ (NSArray *)selectionSortArrayWithInputArray:(NSMutableArray *)inputArray
+{
+    int smallestNumberIndex;
+    
+    //loop n number of times
+    for(int i = 0; i < [inputArray count] - 1; i++){
+        
+        //set smallest number equal to the first element in the current loop
+        smallestNumberIndex = i;
+        
+        //loop through the remaining values
+        for(int j = i; j < [inputArray count]-1; j++){
+            
+            //if the next value is smaller than the current smallest value
+            if([inputArray[smallestNumberIndex] compare:inputArray[j+1]] == NSOrderedDescending)
+                //set new smallest number index
+                smallestNumberIndex = j+1;
+            
+        }
+        
+        //if the smallest number index does not equal the current index
+        if(i != smallestNumberIndex){
+            
+            //swap current index value w/ smallest number index value
+            NSNumber *tempNumber = inputArray[i];
+            inputArray[i] = inputArray[smallestNumberIndex];
+            inputArray[smallestNumberIndex] = tempNumber;
+            
+        }
+        
+    }
+    
+    return [inputArray copy];
+}
+
+//quicksort
++ (NSArray *)quickSortArrayWithInputArray:(NSMutableArray *)inputArray size:(int)size initialIndex:(int)initialIndex
+{
+    //NSLog(@"quickSort size:%i initialIndex:%i",size,initialIndex);
+    
+    //if array's size is less than 2
+    if(size < 2)
+        return inputArray;
+    
+    NSNumber *pivotValue = inputArray[arc4random() % size + initialIndex];
+    int l = initialIndex;
+    int u = initialIndex + size - 1;
+    
+    //NSLog(@"partition l:%i u:%i pivot:%@",l,u,pivotValue);
+    
+    while(l < u){
+        
+        //value at index l is less than or equal to pivot
+        while([inputArray[l] compare:pivotValue] == NSOrderedAscending)
+            l++;
+        //while value at index u is greater than the pivot
+        while([inputArray[u] compare:pivotValue] == NSOrderedDescending)
+            u--;
+    
+        //if there are two values next to eachother that are equal
+        if(abs(l-u) == 1 && [inputArray[u] isEqual:inputArray[l]]){
+            l = u;
+            break;
+        }
+        
+        //if l does not equal u
+        if(l != u && [inputArray[l] compare:inputArray[u]] != NSOrderedSame){
+            //swap value of index l w/ value of index u
+            NSNumber *tempNumber = inputArray[l];
+            inputArray[l] = inputArray[u];
+            inputArray[u] = tempNumber;
+        }
+        
+    }
+    
+    //sort left side of partition
+    [self quickSortArrayWithInputArray:inputArray size:l-initialIndex initialIndex:initialIndex];
+    
+    //sort right side of partition
+    [self quickSortArrayWithInputArray:inputArray size:size-l+initialIndex-1 initialIndex:l+1];
+    
+    
+    return inputArray;
+}
+
+//bucketsort
++ (NSArray *)bucketSortArrayWithInputArray:(NSMutableArray *)inputArray numberOfBuckets:(NSInteger)numberOfBuckets
+{
+    NSMutableArray *bucketsArray = [NSMutableArray new];
+    
+    //add 0s to buckets array
+    for(NSInteger i = 0; i < numberOfBuckets; i++)
+        [bucketsArray addObject:@0];
+    
+    NSInteger index = 0;
+    NSInteger valueAtIndex = 0;
+    
+    //loop through all input array values
+    for(NSInteger i = 0; i < [inputArray count]; i++){
+        index = [((NSNumber *)inputArray[i]) integerValue];
+        valueAtIndex = [((NSNumber *)bucketsArray[index]) integerValue];
+        
+        //increment bucket value by 1
+        bucketsArray[index] = @(++valueAtIndex);
+    }
+    
+    NSMutableArray *finalArray = [NSMutableArray new];
+    
+    NSInteger count = 0;
+    
+    //loop through all buckets
+    for(NSNumber *bucket in bucketsArray){
+        //add n number of buckets index values to array
+        for(NSInteger i = 0; i < [bucket integerValue]; i++)
+            [finalArray addObject:@(count)];
+        
+        count++;
+        
+    }
+    
+    return [finalArray copy];
+}
 
 
 @end

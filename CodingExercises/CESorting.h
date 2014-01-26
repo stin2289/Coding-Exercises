@@ -18,4 +18,16 @@
 //merge sort
 + (NSArray *)mergeSortArrayWithInputArray:(NSArray *)inputArray;
 
+//bubble sort
++ (NSArray *)bubbleSortArrayWithInputArray:(NSMutableArray *)inputArray;
+
+//selection sort
++ (NSArray *)selectionSortArrayWithInputArray:(NSMutableArray *)inputArray;
+
+//quicksort
++ (NSArray *)quickSortArrayWithInputArray:(NSMutableArray *)inputArray size:(int)size initialIndex:(int)initialIndex;
+
+//bucketsort
++ (NSArray *)bucketSortArrayWithInputArray:(NSMutableArray *)inputArray numberOfBuckets:(NSInteger)numberOfBuckets;
+
 @end
