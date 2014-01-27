@@ -228,4 +228,210 @@
 }
 
 
+//9.2
+//- Write a method to sort an array of strings so that all the anagrams are next to each other
++ (NSArray *)orderAnagramsWithInputArray:(NSArray *)inputArray
+{
+    NSArray *array = [inputArray copy];
+    NSMutableDictionary *stringsDictionary = [NSMutableDictionary new];
+    
+    //loop through the inputArray
+    for(int i = 0; i < [array count]; i++){
+        
+        NSString *sortedString = [self selectionSortWithInputString:array[i]];
+        
+        //if anagram value is created
+        if(stringsDictionary[sortedString])
+            //add index to array
+            [stringsDictionary[sortedString] addObject:@(i)];
+        else
+            //create array and insert current index
+            stringsDictionary[sortedString] = [NSMutableArray arrayWithObjects:@(i),nil];
+        
+    }
+    
+    //create new array w/ anagrams together
+    NSMutableArray *sortedArray = [NSMutableArray new];
+    
+    //loop through dictionary keys
+    for(NSString *key in stringsDictionary)
+        //look through array at key value
+        for(NSNumber *index in stringsDictionary[key])
+            [sortedArray addObject:array[[index intValue]]];
+    
+    return [sortedArray copy];
+    
+}
+
+//selection sort string
++ (NSString *)selectionSortWithInputString:(NSString *)inputString
+{
+    NSMutableString *string = [inputString mutableCopy];
+    
+    //loop through string n times
+    for(int i = 0; i < [string length] - 1; i++){
+        
+        NSString *smallestChar = [string substringWithRange:NSMakeRange(i,1)];
+        int indexOfSmallestChar = i;
+        
+        //loop through remainder of string
+        for(int j = i+1; j < [string length]; j++){
+            
+            NSString *currentChar = [string substringWithRange:NSMakeRange(j,1)];
+            
+            //if the smallestChar is more than the currentChar
+            if([smallestChar compare:currentChar] == NSOrderedDescending){
+                //set new smallest char
+                smallestChar = currentChar;
+                indexOfSmallestChar = j;
+            }
+            
+            
+        }
+        
+        //if smallestChar does not equal char at current index
+        if(i != indexOfSmallestChar){
+            
+            /*
+             swap characters
+             */
+            NSString *temp = [string substringWithRange:NSMakeRange(i,1)];
+            [string replaceCharactersInRange:NSMakeRange(i, 1) withString:smallestChar];
+            [string replaceCharactersInRange:NSMakeRange(indexOfSmallestChar, 1) withString:temp];
+            
+        }
+        
+    }
+    
+    return string;
+    
+}
+
+//binary search of array
++ (NSInteger)returnIndexOfTarget:(NSNumber *)target withArray:(NSArray *)array
+{
+    NSInteger low = 0;
+    NSInteger high = [array count];
+    
+    while(low + 1 < high){
+        
+        NSInteger test = (low + high)/2;
+        
+        //if value at test is greater than target
+        if([array[test] compare:target] == NSOrderedDescending)
+            high = test;
+        else
+            low = test;
+        
+    }
+    
+    if(array[low] == target)
+        return low;
+    
+    
+    return -1;
+
+}
+
+
+//9.3
+//- Given a sorted array of n integers that has been rotated an unknown number of times
+//give an O(log n) algorithm that finds an element in the array.
+//You may assume that the array was originally sorted in increasing order
++ (int)binarySearchWithArray:(NSArray *)array lower:(int)lower upper:(int)upper target:(NSNumber *)target
+{
+    while(lower <= upper){
+        
+        int m = (lower + upper)/2;
+        
+        //target is equal to array[m]
+        if([target compare:array[m]] == NSOrderedSame)
+            return m;
+        //array[lower] is less than or equal to array[m]
+        else if([array[lower] compare:array[m]] == NSOrderedAscending || [array[lower] compare:array[m]] == NSOrderedSame){
+            
+            //target is greater than array[m]
+            if([target compare:array[m]] == NSOrderedDescending)
+                lower = m + 1;
+            //target is greater than or equal to array[lower]
+            else if([target compare:array[lower]] == NSOrderedDescending || [target compare:array[lower]] == NSOrderedSame)
+                upper = m - 1;
+            else
+                lower = m + 1;
+            
+        }
+        //target is less than array[m]
+        else if([target compare:array[m]] == NSOrderedAscending)
+            upper = m - 1;
+        //target is less or equal to array[upper]
+        else if([target compare:array[upper]] == NSOrderedAscending || [target compare:array[upper]] == NSOrderedSame)
+            lower = m + 1;
+        else
+            upper = m - 1;
+        
+    }
+        
+    return -1;
+
+}
+
+
+//9.5
+//- Given a sorted array of strings which is interspersed with empty strings, write a method to find the location of a given string
+//Example: find “ball” in [“at”, “”, “”, “”, “ball”, “”, “”, “car”, “”, “”, “dad”, “”, “”] will //return 4
++ (int)returnIndexOfTarget:(NSString *)target interspersedArray:(NSArray *)interspersedArray
+{
+    
+    int lower = 0;
+    int upper = [interspersedArray count] - 1;
+    
+    //while lower is less than upper
+    while(lower < upper - 1){
+        
+        int m = (lower + upper)/2;
+        
+        //shift lower off empty string
+        while([interspersedArray[lower] length] == 0 && lower < m)
+            lower++;
+        
+        //shift upper off empty string
+        while([interspersedArray[upper] length] == 0 && upper > m)
+            upper--;
+        
+        //shift m off empty string
+        while([interspersedArray[m] length] == 0 && m > lower)
+            m--;
+        
+        //if string at lower index is equal to target
+        if([target isEqualToString:interspersedArray[m]])
+            return m;
+        else if([target isEqualToString:interspersedArray[lower]])
+            return lower;
+        else if([target isEqualToString:interspersedArray[upper]])
+            return upper;
+        //if lower is greater than m
+        else if([interspersedArray[lower] compare:interspersedArray[m]] == NSOrderedDescending)
+            lower = m;
+        //if upper is less than m
+        else if([interspersedArray[upper] compare:interspersedArray[m]] == NSOrderedAscending)
+            upper = m;
+        else{
+            if([target compare:interspersedArray[m]] == NSOrderedDescending)
+                lower = m;
+            else
+                upper = m;
+        }
+        
+    }
+    
+    //if string at index is equal to target
+    if([interspersedArray[lower] isEqualToString:target])
+        return lower;
+        
+    return -1;
+        
+}
+
+
+
 @end
